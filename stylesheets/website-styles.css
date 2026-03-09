@@ -34,13 +34,40 @@ h3 {
   color: #ffffff;
 }
 
-p {
+.info-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.info-container img {
+  border: 2px solid #000000;
+  /* margin-left: 10px; */
+  display: block;
+  /* float: left; */
+}
+
+.info-container p {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
   color: #000000;
-  background-color: #a77d4c49;
+  background-color: #d7ad85b5;
+  box-sizing: border-box;
+  display: inline;
+  width: 200px;
 }
+
+/* p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  background-color: #d7ad85b5;
+  box-sizing: border-box;
+} */
 img {
-  border: #000000 solid 2px;
+  border: #000000 solid 5px;
+  border-radius: 10%;
+  display: inline;
 }
