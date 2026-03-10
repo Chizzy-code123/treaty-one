@@ -16,18 +16,24 @@
     <style>
       .treaty-information-container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
-        max-width: 500px;
+        /* max-width: 500px; */
         object-fit: contain;
         vertical-align: middle;
+        padding: 1rem;
+      }
+
+      #official-treaty-one-site {
+        display: block;
+        padding: 12px;
       }
 
       .treaty-information-container img {
-        width: 100%;
+        width: 600px;
         flex-shrink: 1; /* Prevents the image from shrinking if the container is too small*/
         object-fit: cover; /* Makes the image cover the entire container and cuts content if needed*/
-        margin-left: 50%;
+        margin-left: 100px;
       }
 
       .treaty-information-container a {
@@ -38,7 +44,6 @@
       .treaty-information-content {
         padding: 0 15px;
         display: flex;
-        flex-wrap: wrap; /* Controls whether images will wrap onto another line if there is not enough space */
         align-items: center;
         justify-content: space-around;
         gap: 5rem; /* adds space between the content inside the container */
@@ -46,15 +51,18 @@
 
       .treaty-information-content p {
         flex: 1;
-        width: 200px;
+        width: 100px;
+        height: auto;
         padding: 10px; /* Pushes text away from the border */
+        text-align: center;
       }
 
       .treaty-information-container-2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center; /* Centers flex items horizontally */
-        gap: 1rem; /* rem is a unit that is relative to the font-size of the root element. */
+        /* rem is a unit that is relative to the font-size of the root element. */
+        gap: 1rem;
       }
       .treaty-information-container-2 img {
         display: flex;
@@ -90,17 +98,18 @@
             width="500"
             height="300"
             alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
-          <div class="treaty-information-content">
-            <p>
-              Treaty 1 was negotiated between the Canada Crown and the Swampy
-              Cree<br />
-              peoples at Lower Fort Gary (historically known as Stone Fort),<br />
-              Manitoba on August 3, 1871.<br />
-            </p>
-          </div>
+          <p class="treaty-information-content">
+            Treaty 1 was negotiated between the Canada Crown and the Swampy
+            Cree<br />
+            peoples at Lower Fort Gary (historically known as Stone Fort),<br />
+            Manitoba on August 3, 1871.<br />
+          </p>
         </div>
-        <a href="https://treaty1.ca/" target="_blank"
-          >Official Treaty One Site</a
+        <a
+          href="https://treaty1.ca/"
+          target="_blank"
+          id="official-treaty-one-site">
+          Official Treaty One Site</a
         >
       </section>
 
@@ -183,6 +192,12 @@
           it continues to be an important part of the relationship between the
           government and Indigenous communities in Manitoba.
         </p>
+
+        <a
+          href="https://www.gov.mb.ca/inr/major-initiatives/treaty-land-entitlement.html#:~:text=Treaty%20Land%20Entitlement-,Treaty%20Land%20Entitlement,residual%20interests%20in%20acquisition%20lands).">
+          Learn about Manitoba's Treaty Land Entitlement and First Nations land
+          transfers
+        </a>
       </section>
     </main>
   </body>
