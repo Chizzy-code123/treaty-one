@@ -1,3 +1,10 @@
+<!-- 
+  Name: Chizzy Nwankwo
+  Course: Web Development II
+  Teacher: Mr. Hardman
+  School: Pembina Trails Collegiate
+  Date Last Modified: March 9 2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,6 +12,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/website-styles.css" />
     <title>Treaty 1</title>
+
+    <style>
+      .treaty-information-container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 500px;
+        object-fit: contain;
+        vertical-align: middle;
+      }
+
+      .treaty-information-container img {
+        width: 100%;
+        flex-shrink: 1; /* Prevents the image from shrinking if the container is too small*/
+        object-fit: cover; /* Makes the image cover the entire container and cuts content if needed*/
+        margin-left: 50%;
+      }
+
+      .treaty-information-container a {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .treaty-information-content {
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap; /* Controls whether images will wrap onto another line if there is not enough space */
+        align-items: center;
+        justify-content: space-around;
+        gap: 5rem; /* adds space between the content inside the container */
+      }
+
+      .treaty-information-content p {
+        flex: 1;
+        width: 200px;
+        padding: 10px; /* Pushes text away from the border */
+      }
+
+      .treaty-information-container-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centers flex items horizontally */
+        gap: 1rem; /* rem is a unit that is relative to the font-size of the root element. */
+      }
+      .treaty-information-container-2 img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -18,48 +75,56 @@
     <h2>Learning about Treaty 1</h2>
 
     <main>
+      <p style="text-align: center">
+        Treaty 1 was the first of the numbered treaties signed between the
+        Canada Crown and the Indigenous peoples in Manitoba. It was negotiated
+        in 1871 and covered a large area of land in southern Manitoba.
+      </p>
+
       <section>
         <h3>Treaty Negotiation Location</h3>
 
-        <div class="info-container">
+        <div class="treaty-information-container">
           <img
-            style="margin-left: auto; margin-right: auto"
             src="images/Treaty One Negotiation Area.jpg"
             width="500"
             height="300"
             alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
-          <p>
-            Treaty 1 was negotiated between the Canada Crown and the Swampy
-            Cree<br />
-            peoples at Lower Fort Gary (historically known as Stone Fort),<br />
-            Manitoba on August 3, 1871.<br />
-          </p>
-          <a href="https://treaty1.ca/" target="_blank"
-            >Official Treaty One Site</a
-          >
+          <div class="treaty-information-content">
+            <p>
+              Treaty 1 was negotiated between the Canada Crown and the Swampy
+              Cree<br />
+              peoples at Lower Fort Gary (historically known as Stone Fort),<br />
+              Manitoba on August 3, 1871.<br />
+            </p>
+          </div>
         </div>
+        <a href="https://treaty1.ca/" target="_blank"
+          >Official Treaty One Site</a
+        >
       </section>
 
       <section>
         <h3>Treaty 1 On the Map</h3>
 
-        <div class="info-container">
+        <div class="treaty-information-container-2">
           <img
-            src="images/treaty-one-map.webp"
-            width="500"
+            src="images/treaty-one-manitoba.webp"
+            width="350"
             height="300"
-            alt="Map showing the area covered by Treaty 1." />
+            alt="Map showing the area covered by Treaty 1 on the Manitoba province." />
           <img
             src="images/treaty-one-canada.png"
             width="450"
             height="300"
             alt="Map showing the area covered by Treaty 1 in Canada." />
-          <p>
-            Treaty 1 covers the area of land in Manitoba that includes Winnipeg
-            and extends north to the area around Lake Winnipeg. It also includes
-            the area around the Red River and the Assiniboine River.
-          </p>
+          <br />
         </div>
+        <p>
+          Treaty 1 covers the area of land in Manitoba that includes Winnipeg
+          and extends north to the area around Lake Winnipeg. It also includes
+          the area around the Red River and the Assiniboine River.
+        </p>
       </section>
 
       <section>
