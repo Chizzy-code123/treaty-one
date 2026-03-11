@@ -11,29 +11,48 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   margin: 10px;
-  background-color: #991313;
 }
 nav ul li {
   display: inline;
 }
 
+.source-link {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0f4a89;
+  padding: 5px 12px;
+  width: 100px;
+  margin: 0, auto;
+}
+
 nav ul li a {
   color: #ffffff;
   border: 3px solid #000000;
+  background-color: #0f4a89;
   text-align: center;
   text-decoration: none;
   padding: 5px 12px;
 }
 
-h1,
+h1 {
+  background-color: #991313;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 16px;
+  margin: 5px;
+}
+
 h2,
 h3 {
   background-color: #991313;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
+  padding: 5px;
+  margin: 50px;
 }
 
 p {
@@ -48,14 +67,6 @@ p {
   background-color: #f1c36a;
   box-sizing: border-box;
   border: 2px solid;
-}
-a {
-  display: inline-block;
-  color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  text-decoration: none;
-  background-color: #0f4a89;
 }
 
 .highlight:hover {
