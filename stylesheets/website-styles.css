@@ -85,7 +85,8 @@ footer {
 footer p {
   color: #ffffff;
   text-align: center;
-  text-decoration: bold;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 img {
