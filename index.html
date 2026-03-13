@@ -14,6 +14,13 @@
     <title>Treaty 1</title>
 
     <style>
+      #treaty-one-symbol {
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #1b1b1b;
+        border-radius: 100%;
+      }
+
       .treaty-information-container {
         display: flex;
         align-items: center;
@@ -32,58 +39,46 @@
         margin-left: 100px;
       }
 
-      .treaty-information-container a {
-        margin-top: 10px;
-      }
-
-      .treaty-information-content {
+      .treaty-information-container p {
         margin: 0 30px;
         padding: 16px auto;
       }
 
       .treaty-information-container-2 {
         display: flex;
-        flex-wrap: wrap;
         /* Centers flex items horizontally */
         justify-content: center;
         /* rem is a unit that is relative to the font-size of the root element. */
         gap: 1rem;
-      }
-      .treaty-information-container-2 img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      header img {
-        display: block;
-        margin-top: 5px;
-        margin-left: 5px;
-        border-radius: 75%;
-        border: 3px solid #000000;
+        margin: 20px;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Canada's Promises</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Modern Treaty One</a></li>
-      </ul>
-    </nav>
     <header>
-      <h1>Treaty 1</h1>
       <img
-        src="images/treaty-one-symbol.webp"
-        width="140"
-        height="120"
-        alt="Treaty 1 Symbol" />
+        class="treaty-one-header"
+        src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
+        alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
+      <h1>Treaty 1</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Canada's Promises</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Modern Treaty One</a></li>
+        </ul>
+      </nav>
     </header>
+    <img
+      id="treaty-one-symbol"
+      src="images/treaty-one-symbol.webp"
+      width="140"
+      height="120"
+      alt="Treaty 1 Symbol" />
     <h2>Learning about Treaty 1</h2>
 
     <main>
@@ -102,7 +97,7 @@
             width="500"
             height="300"
             alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
-          <p class="treaty-information-content">
+          <p>
             Treaty 1 was negotiated between the Canada Crown and the Swampy
             Cree<br />
             peoples at Lower Fort Gary (historically known as Stone Fort),<br />
@@ -128,7 +123,6 @@
             width="450"
             height="300"
             alt="Map showing the area covered by Treaty 1 in Canada." />
-          <br />
         </div>
         <p>
           Treaty 1 covers the area of land in Manitoba that includes Winnipeg
@@ -146,6 +140,7 @@
           Bay Ojibway First Nation. These nation were mostly part of the
           Anisinabe Nation, but also included some Swampy Cree peoples.
         </p>
+        <br />
         <a
           class="source-link"
           href="https://scoinc.mb.ca/treaties/"
