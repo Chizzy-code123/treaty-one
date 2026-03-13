@@ -27,28 +27,34 @@ nav ul li a {
   font-family: "Human BBY", Arial, sans-serif;
   padding: 0px 12px;
   font-weight: bold;
-}
-
-nav ul li a:hover {
+  /*
+    relative makes the a tag the origin position
+    for any other elements under it 
+  */
   position: relative;
 }
 
+/* Creating an underline */
 nav ul li a::after {
   content: "";
   position: absolute;
+
   width: 0;
   height: 2px;
   bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
+  right: 50%;
+
+  transform: translateX(50%);
+  background-color: ghostwhite;
   transition: width 0.3s ease-out;
 }
 
+/* Animating the underline when hover */
 nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Styling for each link that gives the source to the treaty information */
 .source-link {
   color: #ffffff;
   display: block;
@@ -101,14 +107,13 @@ main p {
   margin-left: auto;
   text-align: center;
   color: #000000;
-  /* background-color: #f6cfaab5; */
   background-color: #f1c36a;
   box-sizing: border-box;
   border: 2px solid #bf8a21;
 }
 
 footer {
-  background-color: #693f03;
+  background-color: #563420;
   padding: 40px;
   margin: 40px 0px 0px 0px;
 }

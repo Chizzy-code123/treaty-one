@@ -21,20 +21,15 @@
         border-radius: 100%;
       }
 
+      /* First section styling */
       .treaty-information-container {
         display: flex;
         align-items: center;
-        width: 100%;
-        object-fit: contain;
-        vertical-align: middle;
         padding: 1rem;
       }
 
       .treaty-information-container img {
         width: 600px;
-        /* Prevents the image from shrinking if the container is too small*/
-        flex-shrink: 1;
-        /* Makes the image cover the entire container and cuts content if needed*/
         object-fit: cover;
         margin-left: 100px;
       }
@@ -44,11 +39,10 @@
         padding: 16px auto;
       }
 
+      /* Section section styling */
       .treaty-information-container-2 {
         display: flex;
-        /* Centers flex items horizontally */
         justify-content: center;
-        /* rem is a unit that is relative to the font-size of the root element. */
         gap: 1rem;
         margin: 20px;
       }
@@ -82,12 +76,18 @@
     <h2>Learning about Treaty 1</h2>
 
     <main>
-      <p style="text-align: center">
+      <!-- Introducing Treaty One -->
+      <p>
         Treaty 1 was the first of the numbered treaties signed between the
         Canada Crown and the Indigenous peoples in Manitoba. It was negotiated
         in 1871 and covered a large area of land in southern Manitoba.
       </p>
 
+      <!--
+        First section that contains images that
+        displays the Treaty 1 negotiation between the indigenous peoples
+        and the Crown's representatives.
+      -->
       <section>
         <h3>Treaty Negotiation Location</h3>
 
@@ -97,10 +97,12 @@
             width="500"
             height="300"
             alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
-          <p>
-            Treaty 1 was negotiated between the Canada Crown and the Swampy
-            Cree<br />
-            peoples at Lower Fort Gary (historically known as Stone Fort),<br />
+          <p span>
+            Treaty 1 was negotiated between the
+            <span style="font-weight: bold">Crown</span> and the Swampy Cree<br />
+            peoples at Lower Fort Gary (<span style="font-style: italic"
+              >known as Stone Fort</span
+            >) ,<br />
             Manitoba on August 3, 1871.<br />
           </p>
         </div>
@@ -109,6 +111,7 @@
         >
       </section>
 
+      <!-- Shows where Treaty 1 covers on the Manitoba map and Canada map. -->
       <section>
         <h3>Treaty 1 On the Map</h3>
 
@@ -131,6 +134,7 @@
         </p>
       </section>
 
+      <!-- Lists the indigenous communities that were involved in the creation of Treaty 1. -->
       <section>
         <h3>Indigenous Communities Involved in Treaty 1</h3>
         <p>
@@ -150,6 +154,7 @@
       </section>
     </main>
 
+    <!-- Copyright information -->
     <footer>
       <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
     </footer>
