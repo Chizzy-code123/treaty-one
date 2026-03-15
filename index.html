@@ -24,14 +24,16 @@
       /* First section styling */
       .treaty-information-container {
         display: flex;
-        align-items: center;
-        padding: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
 
       .treaty-information-container img {
         width: 600px;
         object-fit: cover;
-        margin-left: 100px;
+        margin-left: 50%;
+        margin: 10px;
       }
 
       .treaty-information-container p {
@@ -42,9 +44,15 @@
       /* Section section styling */
       .treaty-information-container-2 {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
         margin: 20px;
+      }
+
+      .treaty-information-container-2 img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
