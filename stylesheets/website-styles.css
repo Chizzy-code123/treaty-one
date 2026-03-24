@@ -1,5 +1,7 @@
 body {
-  background-color: #ffe8a3;
+  background-color: #f9eabc;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -59,7 +61,7 @@ h3 {
   color: #ffffff;
   width: fit-content;
   padding: 5px 80px;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 main p {
@@ -75,10 +77,22 @@ main p {
   box-sizing: border-box;
   border: 2px solid #bf8a21;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container img {
+  display: inline;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 75%;
+  border: 3px solid #000000;
+}
 
 footer {
   background-color: #783c00;
-  padding: 10px;
+  padding: 40px 0 0 0;
   margin: 40px 0px 0px 0px;
 }
 
