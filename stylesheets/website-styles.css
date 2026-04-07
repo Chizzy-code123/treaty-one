@@ -1,11 +1,17 @@
+/* This tells the browser to apply all styles to every single elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #ffe8a3;
+  font-size: 1.6rem;
 }
 
 nav {
@@ -85,6 +91,7 @@ h1 {
   color: #eeeeee;
   padding: 20px;
   margin: 20px 0px 0px;
+  font-size: 40px;
 }
 
 h2,
@@ -106,7 +113,7 @@ main p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  color: #000000;
+  color: #1b1b1b;
   background-color: #f1c36a;
   box-sizing: border-box;
   border: 2px solid #bf8a21;
@@ -121,7 +128,7 @@ main p {
   margin-top: 5px;
   margin-left: 5px;
   border-radius: 75%;
-  border: 3px solid #000000;
+  border: 3px solid #1b1b1b;
 }
 
 footer {
@@ -138,6 +145,6 @@ footer p {
 }
 
 img {
-  border: #0b1215 solid 5px;
+  border: #1b1b1b solid 5px;
   border-radius: 10%;
 }
