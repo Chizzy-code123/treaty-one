@@ -22,7 +22,7 @@
       }
 
       /* First section styling */
-      .treaty-information-container {
+      #treaty-negotiation-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -30,23 +30,23 @@
         gap: 1rem;
       }
 
-      .treaty-information-container img {
+      #treaty-negotiation-container img {
         width: 600px;
         object-fit: cover;
         margin-left: 50%;
         margin: 10px;
       }
 
-      .treaty-information-container p {
+      #treaty-negotiation-container p {
         margin: 0 30px;
-        padding: 16px auto;
+        padding: 20px;
         max-height: 200px;
         max-width: 400px;
         text-align: center;
       }
 
       /* Section section styling */
-      .treaty-information-container-2 {
+      #treaty-one-map {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -54,7 +54,7 @@
         margin: 20px;
       }
 
-      .treaty-information-container-2 img {
+      #treaty-one-map img {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -63,32 +63,35 @@
   </head>
   <body>
     <header>
+      <!-- Creating banner -->
       <img
         class="treaty-one-header"
         src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
         alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
       <h1>Treaty 1</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="color-theory.html">Color Theory</a></li>
+        </ul>
+        <ul>
+          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+        </ul>
+      </nav>
+
+      <div id="header-container">
+        <img
+          class="treaty-one-symbol"
+          src="images/treaty-one-symbol.webp"
+          width="140"
+          height="120"
+          alt="Treaty 1 Symbol" />
+        <h2>Learning about Treaty 1</h2>
+      </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      <ul>
-        <li><a href="color-theory.html">Color Theory</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Modern Treaty One</a></li>
-      </ul>
-    </nav>
-    <div class="header-container">
-      <img
-        class="treaty-one-symbol"
-        src="images/treaty-one-symbol.webp"
-        width="140"
-        height="120"
-        alt="Treaty 1 Symbol" />
-      <h2>Learning about Treaty 1</h2>
-    </div>
 
     <main>
       <!-- Introducing Treaty One -->
@@ -106,7 +109,7 @@
       <section>
         <h3>Treaty Negotiation Location</h3>
 
-        <div class="treaty-information-container">
+        <div id="treaty-negotiation-container">
           <img
             src="images/Treaty One Negotiation Area.jpg"
             width="500"
@@ -130,7 +133,7 @@
       <section>
         <h3>Treaty 1 On the Map</h3>
 
-        <div class="treaty-information-container-2">
+        <div id="treaty-one-map">
           <img
             src="images/treaty-one-manitoba.webp"
             width="350"
