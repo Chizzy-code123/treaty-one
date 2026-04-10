@@ -73,6 +73,7 @@ nav a:hover::after {
   max-width: 300px;
   margin: 16px;
   margin-right: auto;
+  border-radius: 5px;
   border: 3px solid #1c1c1c;
 }
 
@@ -89,7 +90,7 @@ h1 {
   background-color: #991313;
   text-align: left;
   font-weight: bold;
-  color: #eeeeee;
+  color: #f8f8ff;
   padding: 20px;
   margin: 20px 0px 0px;
   font-size: 40px;
@@ -113,6 +114,7 @@ main p {
   width: 700px;
   margin-right: auto;
   margin-left: auto;
+  padding: 16px;
   text-align: center;
   color: #1b1b1b;
   background-color: #f1c36a;

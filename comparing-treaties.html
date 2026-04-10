@@ -11,10 +11,12 @@
         background-color: ghostwhite;
       }
       h1 {
-        background-color: #7d8c71;
+        color: ghostwhite;
+        background-color: #40503f;
+        text-transform: uppercase;
       }
       nav {
-        background-color: #5a6254;
+        background-color: #374536;
       }
 
       #treaty-one-comparison {
@@ -45,8 +47,7 @@
         /* This makes it so that content is centered horizontally */
         justify-content: center;
         gap: 1rem;
-        margin: 20px;
-        background-color: #7d8c71;
+        background-color: #a3b795;
       }
 
       #treaty-one-historical-terms a {
@@ -54,18 +55,13 @@
         max-height: 50px;
         max-width: 300px;
         display: block;
-        color: ghostwhite;
-        text-align: center;
-        text-decoration: none;
-        font-family: "Human BBY", Arial, sans-serif;
-        font-weight: bold;
         padding: 5px 22px;
         border: 3px solid #1c1c1c;
 
         /*
           This makes it so that the anchor tag can
           be positioned anywhere without worrying about
-          the line 
+          the line
         */
         position: absolute;
         /* Moving the element around the page (first parameter is horizontal, second is vertical) */
@@ -77,6 +73,11 @@
         height: auto;
         border: 0px;
         border-radius: 0px;
+      }
+
+      #treaty-one-historical-terms p {
+        padding-top: 32px;
+        font-size: 24px;
       }
 
       #modern-treaty-one {
@@ -101,19 +102,14 @@
         margin-right: 100%;
       }
 
-      h1 {
-        text-transform: uppercase;
-      }
-
       h2,
       h3 {
-        background-color: #60744d;
-        border: 4px solid #5a6254;
+        background-color: #40503f;
+        border: 0px;
       }
 
       main p {
-        background-color: #7d8c71;
-        color: ghostwhite;
+        background-color: #a3b795;
         padding: 16px;
         border: 0px;
       }
@@ -127,6 +123,7 @@
         background-color: #5a6254;
         max-height: 50px;
         margin-left: 30px;
+        /* border-radius: 5px; */
       }
 
       footer {
@@ -209,7 +206,10 @@
             Victoria as the "Great Mother" which the indigenous peoples found as
             a person of respect that has their best interests at heart.
           </p>
-          <a href="https://en.wikipedia.org/wiki/Treaty_1" target="_blank">
+          <a
+            class="source-link"
+            href="https://en.wikipedia.org/wiki/Treaty_1"
+            target="_blank">
             Wikipedia page on Treaty 1
           </a>
 
