@@ -14,18 +14,6 @@
     <title>Comparing Treaty One</title>
 
     <style>
-      body {
-        background-color: #f8f8ff;
-      }
-      h1 {
-        color: ghostwhite;
-        background-color: #40503f;
-        text-transform: uppercase;
-      }
-      nav {
-        background-color: #374536;
-      }
-
       /* 
         Styling the treaty one comparision section in
         the main content
@@ -59,10 +47,20 @@
         border-radius: 0px;
       }
 
+      #treaty-one-comparison p {
+        max-width: 600px;
+        text-align: center;
+      }
+
       /* Pushing treaty comparision source link to the right. */
       #treaty-one-comparison a {
         margin-top: 5px;
-        margin-right: 75%;
+        /* 
+          This makes the height change depending
+          on the amount of text there is.
+        */
+        height: fit-content;
+        margin-right: auto;
       }
 
       #treaty-one-historical-terms {
@@ -91,9 +89,7 @@
       /* Styling the anchor tags inside the historical terms container */
       #treaty-one-historical-terms a {
         background-color: #5a6254;
-        max-height: 50px;
-        max-width: 300px;
-        display: block;
+        display: inline-block;
         /*
           This makes it so that the anchor tag can
           be positioned anywhere without worrying about
@@ -114,14 +110,17 @@
       }
 
       #treaty-one-historical-terms p {
+        /* Pushing text down */
         padding-top: 32px;
-        font-size: 24px;
       }
 
       #modern-treaty-one {
         display: flex;
         flex-wrap: wrap;
-        /* Align items takes all the items in the flex and decides their positioning */
+        /* 
+          Align items takes all the items in the flex
+          and decides their positioning
+        */
         align-items: flex-start;
         justify-content: center;
         gap: 1rem;
@@ -148,28 +147,6 @@
 
       #modern-treaty-one a {
         margin-right: auto;
-      }
-
-      h2,
-      h3 {
-        background-color: #40503f;
-        border: 0px;
-      }
-
-      main p {
-        background-color: #a3b795;
-        padding: 16px;
-        border: 0px;
-      }
-
-      a.source-link {
-        background-color: #5a6254;
-        max-height: 50px;
-        border-radius: 5px;
-      }
-
-      footer {
-        background-color: #60744d;
       }
     </style>
   </head>
