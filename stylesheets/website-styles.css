@@ -6,6 +6,7 @@
 }
 
 html {
+  /* This makes sizing easier and consistent. */
   font-size: 62.5%;
 }
 
@@ -19,6 +20,7 @@ nav {
   background-color: #740d0d;
 }
 
+/* Style each list item in nav */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -26,6 +28,7 @@ nav ul {
   padding: 10px;
 }
 
+/* Styling navigation bar anchor tags */
 nav a {
   color: ghostwhite;
   text-align: center;
@@ -40,19 +43,47 @@ nav a {
   position: relative;
 }
 
-/* Creating an underline */
+/* 
+  Creating a pseudo element which is an element
+  that doesn't exist in the HTML but is
+  created and styled using CSS.
+
+  In this case, we are creating an underline effect
+*/
 nav a::after {
+  /*
+    This makes it so that the pseudo-element
+    won't have any text in it.
+  */
   content: "";
+  /* 
+    Setting the position to absolute so that it
+    will start at the origin of the anchor tag
+  */
   position: absolute;
 
   width: 0;
   height: 2px;
+
+  /* Positioning the underline */
   bottom: -5px;
   right: 50%;
 
-  /* This moves the element half of it's containers width */
+  /* 
+    Transform is used to move the element from it's original position.
+
+    This moves the element half of
+    it's containers width
+  */
   transform: translateX(50%);
   background-color: ghostwhite;
+  /* 
+    This is used to smoothly animate the
+    width of the underline when hovering over the link.
+
+    The ease-out easing function makes the animation
+    start fast and end slow.
+  */
   transition: width 0.3s ease-out;
 }
 
@@ -64,23 +95,31 @@ nav a:hover::after {
 /* Styling for each link that gives the source to the treaty information */
 .source-link {
   color: #ffffff;
-  display: block;
+  display: inline-block;
   text-align: right;
   text-decoration: none;
   font-family: "Human BBY", Arial, sans-serif;
   font-weight: bold;
   background-color: #783c00;
   padding: 5px 12px;
+  width: fit-content;
+  border-radius: 5px;
   border: 3px solid #1c1c1c;
-  margin-left: auto;
+  margin-left: 10px;
 }
 
+/* 
+  Styling for the header image container
+  where there will be a banner
+*/
 .treaty-one-header {
   position: relative;
   width: 100%;
   height: 200px;
+  /* This ensures the image covers the entire container */
   object-fit: cover;
   border: 0px;
+  /* This removes any border corners from the image */
   border-radius: 0px;
 }
 
@@ -101,8 +140,12 @@ h3 {
   text-align: center;
   font-weight: bold;
   color: #ffffff;
+  /* 
+    Fit content makes it so that the element only
+    takes up as much space as its content requires
+  */
   width: fit-content;
-  padding: 5px 80px;
+  padding: 10px 80px;
   margin: 60px auto;
 }
 

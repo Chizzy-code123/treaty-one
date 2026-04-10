@@ -59,20 +59,26 @@
         border-radius: 0px;
       }
 
+      /* Pushing treaty comparision source link to the right. */
+      #treaty-one-comparison a {
+        margin-top: 5px;
+        margin-right: 75%;
+      }
+
       #treaty-one-historical-terms {
         /* Flex snaps the content horizontally or vertically */
         display: flex;
         /* Flex wrap makes it so that content wraps to the next line if it overflows */
         flex-wrap: wrap;
         /* This makes it so that text will hug to the top if it is shorter than the container */
-        align-items: flex-start;
+        align-items: center;
         /* This makes it so that content is centered horizontally */
         justify-content: center;
+        background-color: #a3b795;
         gap: 1rem;
       }
 
       #treaty-one-historical-terms p {
-        padding-top: 64px;
         font-size: 24px;
         /* 
           This makes this one element by itself hug on 
@@ -88,9 +94,6 @@
         max-height: 50px;
         max-width: 300px;
         display: block;
-        padding: 5px 22px;
-        border: 3px solid #1c1c1c;
-
         /*
           This makes it so that the anchor tag can
           be positioned anywhere without worrying about
@@ -101,7 +104,7 @@
           Moving the element around the page
           first parameter is horizontal, second is vertical
         */
-        transform: translate(-80%, -30px);
+        transform: translate(-80%, 160px);
       }
 
       #treaty-one-historical-terms img {
@@ -126,7 +129,7 @@
       }
 
       #modern-treaty-one p {
-        max-width: 50%;
+        max-width: 45%;
       }
 
       #modern-treaty-one img {
@@ -143,6 +146,10 @@
         margin-right: 100%;
       }
 
+      #modern-treaty-one a {
+        margin-right: auto;
+      }
+
       h2,
       h3 {
         background-color: #40503f;
@@ -155,16 +162,10 @@
         border: 0px;
       }
 
-      main a {
-        background-color: #60744d;
-        margin: 16px;
-      }
-
       a.source-link {
         background-color: #5a6254;
         max-height: 50px;
-        margin-left: 30px;
-        /* border-radius: 5px; */
+        border-radius: 5px;
       }
 
       footer {
@@ -284,6 +285,13 @@
               src="images/ML-Former-Kapyong-barracks-site-planMainWEB2-NIPD.webp" />
             <figcaption>Naawi-Oodena Urban Reserve Project</figcaption>
           </figure>
+
+          <a
+            class="source-link"
+            href="https://treaty1.ca/naawi-oodena/"
+            target="_blank">
+            Official Treaty One Site - Naawi-Oodena Urban Reserve Project
+          </a>
         </div>
       </section>
     </main>
