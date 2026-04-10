@@ -1,3 +1,10 @@
+<!-- 
+  Name: Chizzy Nwankwo
+  Course: Web Development II
+  Teacher: Mr. Hardman
+  School: Pembina Trails Collegiate
+  Date Last Modified: April 9th, 2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +15,7 @@
 
     <style>
       body {
-        background-color: ghostwhite;
+        background-color: #f8f8ff;
       }
       h1 {
         color: ghostwhite;
@@ -19,9 +26,26 @@
         background-color: #374536;
       }
 
+      /* 
+        Styling the treaty one comparision section in
+        the main content
+      */
       #treaty-one-comparison {
+        /* 
+          Groups all content under it
+          and turns into a flex
+          box which can be styled and aligned
+        */
         display: flex;
+        /* 
+          Flex wrap makes it so that content wraps to the next
+          line if it overflows.
+
+          It is good for people that are on smaller devices because
+          we don't want content to clip through the webpage
+        */
         flex-wrap: wrap;
+        /* Justify content: center centers the items that are inside the flex */
         justify-content: center;
         /* Spaces elements in flex container */
         gap: 1rem;
@@ -31,8 +55,6 @@
 
       #treaty-one-comparison img {
         width: 500px;
-        max-width: 500px;
-        height: auto;
         border: 0px;
         border-radius: 0px;
       }
@@ -47,9 +69,20 @@
         /* This makes it so that content is centered horizontally */
         justify-content: center;
         gap: 1rem;
-        background-color: #a3b795;
       }
 
+      #treaty-one-historical-terms p {
+        padding-top: 64px;
+        font-size: 24px;
+        /* 
+          This makes this one element by itself hug on 
+          top of the container without effecting any 
+          other elements 
+        */
+        align-self: flex-start;
+      }
+
+      /* Styling the anchor tags inside the historical terms container */
       #treaty-one-historical-terms a {
         background-color: #5a6254;
         max-height: 50px;
@@ -64,13 +97,15 @@
           the line
         */
         position: absolute;
-        /* Moving the element around the page (first parameter is horizontal, second is vertical) */
-        transform: translate(-80%, 290px);
+        /* 
+          Moving the element around the page
+          first parameter is horizontal, second is vertical
+        */
+        transform: translate(-80%, -30px);
       }
 
       #treaty-one-historical-terms img {
         width: 400px;
-        height: auto;
         border: 0px;
         border-radius: 0px;
       }
@@ -83,6 +118,7 @@
       #modern-treaty-one {
         display: flex;
         flex-wrap: wrap;
+        /* Align items takes all the items in the flex and decides their positioning */
         align-items: flex-start;
         justify-content: center;
         gap: 1rem;
@@ -96,6 +132,11 @@
       #modern-treaty-one img {
         width: 500px;
         max-width: 500px;
+        /*
+          Height: auto makes it so that the height
+          of image will scale with the
+          container's size
+        */
         height: auto;
         border: 0px;
         border-radius: 0px;
@@ -151,6 +192,7 @@
         </ul>
       </nav>
 
+      <!-- Header container that has the treaty one symbol and title -->
       <div id="header-container">
         <img
           class="treaty-one-symbol"
@@ -245,10 +287,9 @@
         </div>
       </section>
     </main>
+    <!-- Copyright information -->
+    <footer>
+      <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
+    </footer>
   </body>
-
-  <!-- Copyright information -->
-  <footer>
-    <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
-  </footer>
 </html>
