@@ -14,13 +14,6 @@
     <title>Treaty 1</title>
 
     <style>
-      #treaty-one-symbol {
-        display: block;
-        margin: 10px auto;
-        border: 1px solid #1b1b1b;
-        border-radius: 100%;
-      }
-
       /* First section styling */
       #treaty-negotiation-container {
         display: flex;
@@ -32,11 +25,16 @@
 
       #treaty-negotiation-container img {
         width: 600px;
+        /* 
+          This makes the image cover the entire container
+          if it's larger then it will stretch 
+        */
         object-fit: cover;
         margin-left: 50%;
         margin: 10px;
       }
 
+      /* Styling the paragraph within the negotiation container */
       #treaty-negotiation-container p {
         margin: 0 30px;
         padding: 20px;
@@ -47,16 +45,24 @@
 
       /* Section section styling */
       #treaty-one-map {
+        /* 
+          Flex makes the elements under it flex items
+          and they can be aligned in rows or collums 
+        */
         display: flex;
         flex-wrap: wrap;
+        /* This makes the container stay in the center */
         justify-content: center;
         gap: 1rem;
         margin: 20px;
       }
 
+      /* Styling the images within the map container */
       #treaty-one-map img {
         display: flex;
+        /* This makes the items stack vertically */
         flex-direction: column;
+        /* This keeps the items centered */
         align-items: center;
       }
 
@@ -79,14 +85,10 @@
         alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
       <h1>Treaty 1</h1>
 
+      <!-- Navigation -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-          <li><a href="color-theory.html">Color Theory</a></li>
-        </ul>
-        <ul>
           <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
         </ul>
       </nav>

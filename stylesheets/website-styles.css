@@ -10,6 +10,11 @@
 * {
   margin: 0;
   padding: 0;
+  /* 
+    This makes it so that the website will make the border the\
+    visible content outline to keep
+    sizing consistent 
+  */
   box-sizing: border-box;
 }
 
@@ -24,16 +29,25 @@ body {
 }
 
 nav {
-  display: flex;
+  /* 
+    This display flex makes it so that the nav groups all 
+    the elements under it and treat it 
+    as a flex container
+
+    Now, all elements under the nav will be flex items and
+    will be arranged in a row by default
+  */
   background-color: #374536;
 }
 
 /* Style each list item in nav */
 nav ul {
+  /* This disables any default list styling */
+  display: flex;
   list-style-type: none;
-  padding: 0;
   text-align: center;
   padding: 10px;
+  margin: 0;
 }
 
 /* Styling navigation bar anchor tags */
@@ -110,10 +124,10 @@ nav a:hover::after {
   font-weight: bold;
   background-color: #5a6254;
   padding: 5px 12px;
-  width: fit-content;
   max-height: 50px;
   border-radius: 5px;
   border: 3px solid #1c1c1c;
+
   margin-left: 10px;
   margin: 16px;
 }
@@ -169,7 +183,6 @@ main p {
   text-align: center;
   color: #1b1b1b;
   background-color: #a3b795;
-  box-sizing: border-box;
 }
 #header-container {
   position: relative;
@@ -201,8 +214,19 @@ main p {
   margin: 0;
 }
 
+/* Styling for the Treaty 1 symbol that is in the beginning of the page */
+#treaty-one-symbol {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #1b1b1b;
+  /* This makes the image circular */
+  border-radius: 100%;
+}
+
+/* Bottom of the webpage footer styling */
 footer {
   background-color: #374536;
+  /* This makes the footer background a bit bigger */
   padding: 10px;
 }
 
@@ -213,6 +237,7 @@ footer p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+/* Styling the captions text for that is under the images */
 figcaption {
   text-align: center;
   background-color: #b4bbaf;

@@ -68,7 +68,10 @@
         display: flex;
         /* Flex wrap makes it so that content wraps to the next line if it overflows */
         flex-wrap: wrap;
-        /* This makes it so that text will hug to the top if it is shorter than the container */
+        /* 
+          This makes it so that text will hug to the top
+          if it is shorter than the container
+        */
         align-items: center;
         /* This makes it so that content is centered horizontally */
         justify-content: center;
@@ -77,7 +80,6 @@
       }
 
       #treaty-one-historical-terms p {
-        font-size: 24px;
         /* 
           This makes this one element by itself hug on 
           top of the container without effecting any 
@@ -103,12 +105,6 @@
         transform: translate(-80%, 160px);
       }
 
-      #treaty-one-historical-terms img {
-        width: 400px;
-        border: 0px;
-        border-radius: 0px;
-      }
-
       #treaty-one-historical-terms p {
         /* Pushing text down */
         padding-top: 32px;
@@ -116,12 +112,17 @@
 
       #modern-treaty-one {
         display: flex;
+        /*
+          This makes all items inside the container wrap
+          onto the next line if its taking up too much space 
+        */
         flex-wrap: wrap;
         /* 
           Align items takes all the items in the flex
           and decides their positioning
         */
         align-items: flex-start;
+        /* This centers the items */
         justify-content: center;
         gap: 1rem;
         margin: 20px;
@@ -152,20 +153,17 @@
   </head>
   <body>
     <header>
+      <!-- Big header image -->
       <img
         class="treaty-one-header"
         src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
         alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
       <h1>Comparing Treaty One</h1>
 
+      <!-- Navigation -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-          <li><a href="color-theory.html">Color Theory</a></li>
-        </ul>
-        <ul>
           <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
         </ul>
       </nav>
@@ -200,7 +198,7 @@
         <figure>
           <img
             src="images/signing-of-treaty-one.jpeg"
-            alt="Signing of Treaty 1" />
+            alt="Indigenous Man standing in the middle of a crowd at the Stone Fort talking and pointing at someone." />
           <figcaption>Signing of Treaty 1</figcaption>
         </figure>
         <a
@@ -211,9 +209,13 @@
         </a>
       </div>
 
+      <!--
+        This section contains information about the historical terms
+        of Treaty One and talks about the promises
+        that were orally made
+      -->
       <section>
         <h3>Historical Terms</h3>
-
         <div id="treaty-one-historical-terms">
           <p>
             The terms of Treaty 1 were similar to those of other numbered
@@ -238,37 +240,6 @@
             height="500"
             src="images/Queen Victoria Golden Jubilee 1887.webp"
             alt="Image of Queen Victoria facing another way in her royal attire." />
-        </div>
-      </section>
-
-      <section>
-        <h3>Treaty One Today</h3>
-        <div id="modern-treaty-one">
-          <p>
-            Today, the government provides reserves for indigenous people just
-            like they promised. There are self-governed education programs and
-            Indigenous peoples history is being taught around schools. At the
-            site of the former Kapyong Barracks (now named Naawi-Oodena), the
-            seven treaty one nations are turning that urban reserve into a
-            cultural and economic hub for the city of Winnipeg where people can
-            go and celebrate indigenous culture. The project started in April
-            2024.
-          </p>
-
-          <figure>
-            <img
-              width="600"
-              height="400"
-              src="images/ML-Former-Kapyong-barracks-site-planMainWEB2-NIPD.webp" />
-            <figcaption>Naawi-Oodena Urban Reserve Project</figcaption>
-          </figure>
-
-          <a
-            class="source-link"
-            href="https://treaty1.ca/naawi-oodena/"
-            target="_blank">
-            Official Treaty One Site - Naawi-Oodena Urban Reserve Project
-          </a>
         </div>
       </section>
     </main>
