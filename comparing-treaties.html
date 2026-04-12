@@ -48,7 +48,7 @@
       }
 
       #treaty-one-comparison p {
-        max-width: 600px;
+        width: 600px;
         text-align: center;
       }
 
@@ -77,6 +77,7 @@
         justify-content: center;
         background-color: #a3b795;
         gap: 1rem;
+        padding: 48px;
       }
 
       #treaty-one-historical-terms p {
@@ -92,62 +93,10 @@
       #treaty-one-historical-terms a {
         background-color: #5a6254;
         display: inline-block;
-        /*
-          This makes it so that the anchor tag can
-          be positioned anywhere without worrying about
-          the line
-        */
-        position: absolute;
-        /* 
-          Moving the element around the page
-          first parameter is horizontal, second is vertical
-        */
-        transform: translate(-80%, 160px);
-      }
-
-      #treaty-one-historical-terms p {
-        /* Pushing text down */
-        padding-top: 32px;
-      }
-
-      #modern-treaty-one {
-        display: flex;
-        /*
-          This makes all items inside the container wrap
-          onto the next line if its taking up too much space 
-        */
-        flex-wrap: wrap;
-        /* 
-          Align items takes all the items in the flex
-          and decides their positioning
-        */
-        align-items: flex-start;
-        /* This centers the items */
-        justify-content: center;
-        gap: 1rem;
-        margin: 20px;
-      }
-
-      #modern-treaty-one p {
-        max-width: 45%;
-      }
-
-      #modern-treaty-one img {
-        width: 500px;
-        max-width: 500px;
-        /*
-          Height: auto makes it so that the height
-          of image will scale with the
-          container's size
-        */
-        height: auto;
-        border: 0px;
-        border-radius: 0px;
-        margin-right: 100%;
-      }
-
-      #modern-treaty-one a {
-        margin-right: auto;
+        /* This makes the a tag centered in the container */
+        transform: translate(-50%, 50%);
+        /* Making the a tag align to the end of the container */
+        align-self: flex-end;
       }
     </style>
   </head>
@@ -228,18 +177,18 @@
             Victoria as the "Great Mother" which the indigenous peoples found as
             a person of respect that has their best interests at heart.
           </p>
+
+          <img
+            width="250"
+            height="300"
+            src="images/Queen Victoria Golden Jubilee 1887.webp"
+            alt="Image of Queen Victoria facing another way in her royal attire." />
           <a
             class="source-link"
             href="https://en.wikipedia.org/wiki/Treaty_1"
             target="_blank">
             Wikipedia page on Treaty 1
           </a>
-
-          <img
-            width="400"
-            height="500"
-            src="images/Queen Victoria Golden Jubilee 1887.webp"
-            alt="Image of Queen Victoria facing another way in her royal attire." />
         </div>
       </section>
     </main>

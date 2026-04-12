@@ -6,6 +6,12 @@
   peoples of Canada as they attempt to support the peoples that are trying to heal from the past.
 */
 
+/* 
+  For the font, I'm choosing to stick to the default font, Times New Roman serif, because
+  its easy to read and understand and it gives a sense of fomality and seriousness because the topic
+  is very important and should be treated with respect.
+*/
+
 /* This tells the browser to apply all styling to every single element */
 * {
   margin: 0;
@@ -55,7 +61,7 @@ nav a {
   color: ghostwhite;
   text-align: center;
   text-decoration: none;
-  font-family: "Human BBY", Arial, sans-serif;
+  font-family: "Human BBY", Arial, serif;
   padding: 0px 12px;
   font-weight: bold;
   /*
@@ -116,13 +122,12 @@ nav a:hover::after {
 
 /* Styling for each link that gives the source to the treaty information */
 .source-link {
-  color: #ffffff;
+  color: #f8f8f8;
   display: inline-block;
   text-align: right;
   text-decoration: underline;
-  font-family: "Human BBY", Arial, sans-serif;
   font-weight: bold;
-  background-color: #5a6254;
+  background-color: #4a5346;
   padding: 5px 12px;
   max-height: 50px;
   border-radius: 5px;
@@ -155,10 +160,24 @@ h1 {
   color: #f8f8ff;
   padding: 20px;
   margin: 20px 0px 0px;
-  font-size: 40px;
+  /* Using the traditional scale to size my headings */
+  font-size: 48px;
 }
 
-h2,
+h2 {
+  font-size: 36px;
+  background-color: #40503f;
+  text-align: center;
+  font-weight: bold;
+  color: #f8f8ff;
+  /* 
+    Fit content makes it so that the element only
+    takes up as much space as its content requires
+  */
+  width: fit-content;
+  padding: 16px;
+}
+
 h3 {
   background-color: #40503f;
   text-align: center;
@@ -171,12 +190,13 @@ h3 {
   width: fit-content;
   padding: 10px 80px;
   margin: 60px auto;
+  font-size: 24px;
 }
 
 main p {
   font-size: 20px;
   line-height: 1.5;
-  width: 700px;
+  max-width: 700px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px;
@@ -184,7 +204,12 @@ main p {
   color: #1b1b1b;
   background-color: #a3b795;
 }
+
 #header-container {
+  /* 
+    This makes the container a positioning
+    context for its children
+  */
   position: relative;
 }
 
@@ -228,6 +253,7 @@ footer {
   background-color: #374536;
   /* This makes the footer background a bit bigger */
   padding: 10px;
+  margin-top: 32px;
 }
 
 footer p {
