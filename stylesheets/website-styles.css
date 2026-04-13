@@ -1,5 +1,5 @@
 /* 
-  I chose the colour family of green to represent
+  I chose the colour family of green for my client which is a teacher to represent
   the land and nature that the indigenous peoples of Canada had loved and taken care of.
   Green connects to growth, healing and renewal which is what the Government has been trying to do with the treaties.
   They have learnt from their past mistakes and are trying to make amends with the indigenous
@@ -22,6 +22,7 @@
     sizing consistent 
   */
   box-sizing: border-box;
+  line-height: 140%;
 }
 
 html {
