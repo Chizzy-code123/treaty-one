@@ -41,12 +41,6 @@
         margin: 20px;
       }
 
-      #treaty-one-comparison img {
-        width: 500px;
-        border: 0px;
-        border-radius: 0px;
-      }
-
       #treaty-one-comparison p {
         width: 600px;
         text-align: center;
@@ -63,6 +57,7 @@
         margin-right: auto;
       }
 
+      /* This makes the div a flex container with a green background */
       #treaty-one-historical-terms {
         /* Flex snaps the content horizontally or vertically */
         display: flex;
@@ -87,10 +82,6 @@
           other elements 
         */
         align-self: flex-start;
-      }
-
-      #treaty-one-historical-terms img {
-        margin-right: auto;
       }
     </style>
   </head>
@@ -140,6 +131,7 @@
 
         <figure>
           <img
+            width="500px"
             src="images/signing-of-treaty-one.jpeg"
             alt="Indigenous Man standing in the middle of a crowd at the Stone Fort talking and pointing at someone." />
           <figcaption>Signing of Treaty 1</figcaption>

@@ -194,6 +194,10 @@ h3 {
   font-size: 24px;
 }
 
+/* 
+  Styling all the paragraphs
+  in the main semantic tag 
+*/
 main p {
   font-size: 20px;
   line-height: 1.5;
@@ -257,11 +261,14 @@ footer {
   margin-top: 32px;
 }
 
+/*
+  This styles the paragraph in
+  the footer and makes the text bold 
+*/
 footer p {
   color: ghostwhite;
   text-align: center;
   font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Styling the captions text for that is under the images */
