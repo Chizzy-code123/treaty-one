@@ -1,0 +1,8 @@
+1. text-align doesn't need prefixes because it was standardized before browser vendors started experimenting with prefixes.
+2. margin doesn't need prefixes because every browser had margin implemented the same way
+3. padding doesn't need prefixes because It was fundamental like margin
+4. color Is the basic text styling from CSS1
+5. background-color is a core styling property. It was fully standarized from the start.
+6. font-size Typography basics were agreed upon early on.
+7. border Border was part of the original box model spec which made it consistently implemented across browsers
+8. display Basic layout modes like block and inline are foundational but newer values like flex need prefixes.
