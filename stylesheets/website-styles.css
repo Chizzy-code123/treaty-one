@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: #f8f8ff;
+  background-color: #efffee;
   font-size: 1.6rem;
 }
 
@@ -44,7 +44,7 @@ nav {
     Now, all elements under the nav will be flex items and
     will be arranged in a row by default
   */
-  background-color: #374536;
+  background-color: #40503f;
 }
 
 /* Style each list item in nav */
@@ -123,8 +123,15 @@ nav a:hover::after {
 
 /* Styling for each link that gives the source to the treaty information */
 .source-link {
+  display: block;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+
+  position: relative;
   color: #f8f8f8;
-  display: inline-block;
   text-align: right;
   text-decoration: underline;
   font-weight: bold;
@@ -133,16 +140,13 @@ nav a:hover::after {
   max-height: 50px;
   border-radius: 5px;
   border: 3px solid #1c1c1c;
-
-  margin-left: 10px;
-  margin: 16px;
 }
 
 /* 
-  Styling for the header image container
-  where there will be a banner
+Styling for the header image container
+where there will be a banner
 */
-.treaty-one-header {
+#treaty-one-header {
   position: relative;
   width: 100%;
   height: 200px;
@@ -154,7 +158,11 @@ nav a:hover::after {
 }
 
 h1 {
-  background-color: #40503f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #313f30;
   text-transform: uppercase;
   text-align: left;
   font-weight: bold;
@@ -172,12 +180,14 @@ h2 {
   font-weight: bold;
   color: #f8f8ff;
   /* 
-    Fit content makes it so that the element only
-    takes up as much space as its content requires
+  Fit content makes it so that the element only
+  takes up as much space as its content requires
   */
   width: -webkit-fit-content;
   width: fit-content;
   padding: 16px;
+  width: auto;
+  margin-bottom: 32px;
 }
 
 h3 {
@@ -186,8 +196,8 @@ h3 {
   font-weight: bold;
   color: #f8f8ff;
   /* 
-    Fit content makes it so that the element only
-    takes up as much space as its content requires
+  Fit content makes it so that the element only
+  takes up as much space as its content requires
   */
   width: -webkit-fit-content;
   width: fit-content;
@@ -197,8 +207,8 @@ h3 {
 }
 
 /* 
-  Styling all the paragraphs
-  in the main semantic tag 
+Styling all the paragraphs
+in the main semantic tag 
 */
 main p {
   font-size: 20px;
@@ -209,13 +219,18 @@ main p {
   padding: 16px;
   text-align: center;
   color: #1b1b1b;
-  background-color: #a3b795;
+  background-color: ghostwhite;
+  border: 2px solid #1b1b1b;
 }
 
+div p,
+section p {
+  border: none;
+}
 #header-container {
   /* 
-    This makes the container a positioning
-    context for its children
+  This makes the container a positioning
+  context for its children
   */
   position: relative;
 }
@@ -226,9 +241,6 @@ main p {
   margin-left: 5px;
   border-radius: 75%;
   border: 3px solid #1b1b1b;
-  /* width: 50px;
-  height: 50px; */
-  /* position: relative; */
 }
 
 /* Heading inside the header semantic container */
@@ -251,8 +263,8 @@ main p {
 
 /* Styling for the Treaty 1 symbol that is in the beginning of the page */
 #treaty-one-symbol {
-  display: block;
-  margin: 10px auto;
+  display: inline;
+  right: auto;
   border: 1px solid #1b1b1b;
   /* This makes the image circular */
   border-radius: 100%;

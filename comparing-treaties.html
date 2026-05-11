@@ -14,18 +14,18 @@
     <title>Comparing Treaty One</title>
 
     <style>
-      /* 
+      /*
         Styling the treaty one comparision section in
         the main content
       */
       #treaty-one-comparison {
-        /* 
+        /*
           Groups all content under it
           and turns into a flex
           box which can be styled and aligned
         */
         display: flex;
-        /* 
+        /*
           Flex wrap makes it so that content wraps to the next
           line if it overflows.
 
@@ -33,28 +33,21 @@
           we don't want content to clip through the webpage
         */
         flex-wrap: wrap;
+        align-items: center;
         /* Justify content: center centers the items that are inside the flex */
         justify-content: center;
         /* Spaces elements in flex container */
         gap: 1rem;
+        background-color: ghostwhite;
+        border: 2px solid #1b1b1b;
         /* Margin is for spacing around the container */
-        margin: 20px;
+        margin: 20px auto;
+        padding: 32px;
       }
 
       #treaty-one-comparison p {
-        width: 600px;
-        text-align: center;
-      }
-
-      /* Pushing treaty comparision source link to the right. */
-      #treaty-one-comparison a {
-        margin-top: 5px;
-        /* 
-          This makes the height change depending
-          on the amount of text there is.
-        */
-        height: fit-content;
-        margin-right: auto;
+        max-width: 600px;
+        text-align: left;
       }
 
       /* This makes the div a flex container with a green background */
@@ -63,25 +56,27 @@
         display: flex;
         /* Flex wrap makes it so that content wraps to the next line if it overflows */
         flex-wrap: wrap;
-        /* 
+        /*
           This makes it so that text will hug to the top
           if it is shorter than the container
         */
         align-items: center;
         /* This makes it so that content is centered horizontally */
         justify-content: center;
-        background-color: #a3b795;
+        background-color: ghostwhite;
         gap: 1rem;
-        padding: 48px;
+        padding: 16px;
+        border: 2px solid #1b1b1b;
       }
 
       #treaty-one-historical-terms p {
-        /* 
-          This makes this one element by itself hug on 
-          top of the container without effecting any 
-          other elements 
+        /*
+          This makes this one element by itself hug on
+          top of the container without effecting any
+          other elements
         */
-        align-self: flex-start;
+        /* align-self: flex-start; */
+        border: none;
       }
     </style>
   </head>
@@ -89,10 +84,18 @@
     <header>
       <!-- Big header image -->
       <img
-        class="treaty-one-header"
+        id="treaty-one-header"
         src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
         alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
-      <h1>Comparing Treaty One</h1>
+      <h1>
+        Comparing Treaty One
+        <img
+          width="90"
+          height="80"
+          id="treaty-one-symbol"
+          src="images/treaty-one-symbol.webp"
+          alt="Treaty 1 Symbol" />
+      </h1>
 
       <!-- Navigation -->
       <nav>
@@ -103,16 +106,7 @@
         </ul>
       </nav>
 
-      <!-- Header container that has the treaty one symbol and title -->
-      <div id="header-container">
-        <img
-          class="treaty-one-symbol"
-          src="images/treaty-one-symbol.webp"
-          width="140"
-          height="120"
-          alt="Treaty 1 Symbol" />
-        <h2>Treaty One vs Other Treaties</h2>
-      </div>
+      <h2>Treaty One vs Other Treaties</h2>
     </header>
 
     <main>
@@ -132,18 +126,18 @@
 
         <figure>
           <img
-            width="500px"
+            width="600px"
             src="images/signing-of-treaty-one.jpeg"
             alt="Indigenous Man standing in the middle of a crowd at the Stone Fort talking and pointing at someone." />
           <figcaption>Signing of Treaty 1</figcaption>
         </figure>
-        <a
-          class="source-link"
-          href="https://www.thecanadianencyclopedia.ca/en/article/numbered-treaties"
-          target="_blank">
-          The Canadian Encyclopedia - Numbered Treaties
-        </a>
       </div>
+      <a
+        class="source-link"
+        href="https://www.thecanadianencyclopedia.ca/en/article/numbered-treaties"
+        target="_blank">
+        The Canadian Encyclopedia - Numbered Treaties
+      </a>
 
       <!--
         This section contains information about the historical terms
@@ -166,8 +160,8 @@
           </p>
 
           <img
-            width="250"
-            height="300"
+            width="300"
+            height="350"
             src="images/Queen Victoria Golden Jubilee 1887.webp"
             alt="Image of Queen Victoria facing another way in her royal attire." />
         </div>
@@ -175,7 +169,7 @@
           class="source-link"
           href="https://en.wikipedia.org/wiki/Treaty_1"
           target="_blank">
-          Wikipedia page on Treaty 1
+          Click here to visit Wikipedia page on Treaty 1
         </a>
       </section>
     </main>

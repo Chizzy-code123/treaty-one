@@ -21,6 +21,9 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
+        background-color: ghostwhite;
+        padding: 16px;
+        border: 2px solid #1b1b1b;
       }
 
       #treaty-negotiation-container img {
@@ -41,6 +44,7 @@
         padding: 20px;
         max-height: 200px;
         text-align: center;
+        border: none;
       }
 
       /* Section section styling */
@@ -54,7 +58,9 @@
         /* This makes the container stay in the center */
         justify-content: center;
         gap: 1rem;
-        margin: 20px;
+        border: 2px solid #1b1b1b;
+        background-color: ghostwhite;
+        padding: 32px;
       }
 
       /* Styling the images within the map container */
@@ -64,15 +70,16 @@
         flex-direction: column;
         /* This keeps the items centered */
         align-items: center;
-      }
-
-      #treaty-one-map {
-        background-color: ghostwhite;
-        padding: 32px;
-      }
-
-      #treaty-one-map img {
         border: 2px solid #1b1b1b;
+      }
+
+      #indigenous-communities-involved {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(images/broken-head-ojibway-nation.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 32px;
       }
     </style>
   </head>
@@ -137,7 +144,7 @@
           </p>
         </div>
         <a class="source-link" href="https://treaty1.ca/" target="_blank">
-          Official Treaty One Site</a
+          Click here to visit the official Treaty One Site to learn more!</a
         >
       </section>
 
@@ -165,7 +172,7 @@
       </section>
 
       <!-- Lists the indigenous communities that were involved in the creation of Treaty 1. -->
-      <section>
+      <section id="indigenous-communities-involved">
         <h3>Indigenous Communities Involved in Treaty 1</h3>
         <p>
           The Indigenous main communities involved in Treaty 1 include the
