@@ -140,11 +140,20 @@ nav a:hover::after {
   max-height: 50px;
   border-radius: 5px;
   border: 3px solid #1c1c1c;
+
+  transition:
+    color 0.3s ease-out,
+    background-color 0.3s ease-out;
+}
+
+.source-link:hover {
+  background-color: #f8f8f8;
+  color: #4a5346;
 }
 
 /* 
-Styling for the header image container
-where there will be a banner
+  Styling for the header image container
+  where there will be a banner
 */
 #treaty-one-header {
   position: relative;
@@ -180,8 +189,8 @@ h2 {
   font-weight: bold;
   color: #f8f8ff;
   /* 
-  Fit content makes it so that the element only
-  takes up as much space as its content requires
+    Fit content makes it so that the element only
+    takes up as much space as its content requires
   */
   width: -webkit-fit-content;
   width: fit-content;
@@ -196,8 +205,8 @@ h3 {
   font-weight: bold;
   color: #f8f8ff;
   /* 
-  Fit content makes it so that the element only
-  takes up as much space as its content requires
+    Fit content makes it so that the element only
+    takes up as much space as its content requires
   */
   width: -webkit-fit-content;
   width: fit-content;
@@ -207,8 +216,8 @@ h3 {
 }
 
 /* 
-Styling all the paragraphs
-in the main semantic tag 
+  Styling all the paragraphs
+  in the main semantic tag 
 */
 main p {
   font-size: 20px;
@@ -229,8 +238,8 @@ section p {
 }
 #header-container {
   /* 
-  This makes the container a positioning
-  context for its children
+    This makes the container a positioning
+    context for its children
   */
   position: relative;
 }
