@@ -35,6 +35,11 @@ body {
   font-size: 1.6rem;
 }
 
+/* #main-container { */
+/* width: 960px; */
+/* margin: 0 auto; */
+/* } */
+
 nav {
   /* 
     This display flex makes it so that the nav groups all 

@@ -1,3 +1,10 @@
+<!-- 
+  Name: Chizzy Nwankwo
+  Course: Web Development II
+  Teacher: Mr. Hardman
+  School: Pembina Trails Colligiate
+  Date Last Modified: May 12, 2026
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,6 +24,14 @@
         justify-content: center;
       }
 
+      #kapyong-barracks div {
+        background-color: rgba(100, 100, 100, 0.8);
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
       #kapyong-barracks h3 {
         background-color: transparent;
         margin: 0px auto;
@@ -28,61 +43,121 @@
         background-color: transparent;
         color: ghostwhite;
       }
+
+      #long-plain-nation-gas-station {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: ghostwhite;
+        border: 2px solid #1b1b1b;
+        padding: 16px;
+        padding-top: 16px;
+      }
+
+      #long-plain-nation-gas-station figure {
+        margin-right: 16px;
+      }
+
+      #long-plain-nation-gas-station img {
+        aspect-ratio: 16/9;
+        width: 600px;
+        height: auto;
+        /* border-radius: 20px; */
+      }
     </style>
   </head>
   <body>
-    <header>
-      <img
-        id="treaty-one-header"
-        src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
-        alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
-      <h1>
-        Modern Treaty One
+    <!-- 
+      This is allowed by Mr. Hardman because Chizzy is doing 
+      a fixed-width layout.
+    -->
+    <div id="main-container">
+      <header>
         <img
-          width="90"
-          height="80"
-          id="treaty-one-symbol"
-          src="images/treaty-one-symbol.webp"
-          alt="Treaty 1 Symbol" />
-      </h1>
+          id="treaty-one-header"
+          src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
+          alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
+        <h1>
+          Modern Treaty One
+          <img
+            width="90"
+            height="80"
+            id="treaty-one-symbol"
+            src="images/treaty-one-symbol.webp"
+            alt="Treaty 1 Symbol" />
+        </h1>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+            <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+          </ul>
+        </nav>
 
-      <h2>The Living Legacy: Treaty One Today</h2>
-    </header>
+        <h2>The Living Legacy: Treaty One Today</h2>
+      </header>
 
-    <main>
-      <section id="kapyong-barracks">
-        <h3>Kapyong Barracks</h3>
-        <p>
-          The Kapyong Barracks is a former military base located in Winnipeg,
-          Manitoba. It has a rich history and has been redeveloped into
-          Naawi-Oodena. The goal is to create an urban reserve that will help
-          reshape Winnipeg's future urban growth, make a safe place to share
-          culture and create economic opportunities for the indigenous
-          communities.
-          <br />
-          Today, the government provides reserves for indigenous people just
-          like they promised. There are self-governed education programs and
-          Indigenous peoples history is being taught around schools. At the site
-          of the former Kapyong Barracks (now named Naawi-Oodena), the seven
-          treaty one nations are turning that urban reserve into a cultural and
-          economic hub for the city of Winnipeg where people can go and
-          celebrate indigenous culture. The project started in April 2024.
-        </p>
-      </section>
-      <a
-        class="source-link"
-        href="https://treaty1.ca/naawi-oodena/"
-        target="_blank">
-        Official Treaty One Site - Naawi-Oodena Urban Reserve Project
-      </a>
-    </main>
+      <main>
+        <section id="kapyong-barracks">
+          <div>
+            <h3>Kapyong Barracks</h3>
+            <p>
+              Today, the government provides reserves for indigenous people just
+              like they promised. There are self-governed education programs and
+              Indigenous peoples history is being taught around schools. The
+              Kapyong Barracks is a former military base located in Winnipeg,
+              Manitoba. It has a rich history and has been redeveloped into
+              Naawi-Oodena. The goal is to create an urban reserve that will
+              help reshape Winnipeg's future urban growth, make a safe place to
+              share culture and create economic opportunities for the indigenous
+              communities.
+              <br />
+              This project has been going on since 2018 and is expected to be
+              completed by 2028.
+            </p>
+          </div>
+        </section>
+        <a
+          class="source-link"
+          href="https://treaty1.ca/naawi-oodena/"
+          target="_blank">
+          Click here to learn more about the Naawi-Oodena Urban Reserve Project
+        </a>
+
+        <section>
+          <h3>Long Plain First Nations Gas Station</h3>
+          <div id="long-plain-nation-gas-station">
+            <p>
+              The Long Plain First Nations Gas Station
+              <i>Petro-Canada Keesh (formerly Arrowhead Gas Bar)</i> is a modern
+              example of Indigenous economic development. Located on the Long
+              Plain First Nation reserve, this gas station provides essential
+              services to the community and generates revenue that supports
+              local initiatives. The project reflects the ongoing efforts of
+              Indigenous peoples to reclaim their economic sovereignty and
+              create sustainable opportunities for their communities.
+            </p>
+            <figure>
+              <img
+                width="650"
+                height="350"
+                src="images/long-plain-nation-gas-station.jpg" />
+              <figcaption>
+                Petro-Canada Keesh gas station which is<br />
+                located at the intersection of Highway 305 and Yellowquill
+                Trail.
+              </figcaption>
+            </figure>
+          </div>
+          <a
+            class="source-link"
+            href="https://www.longplainfirstnation.ca/"
+            target="_blank">
+            Click here to learn more about the Long Plain First Nation
+          </a>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
