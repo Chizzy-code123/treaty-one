@@ -146,7 +146,17 @@ nav a:hover::after {
     background-color 0.3s ease-out;
 }
 
+.source-link:focus,
 .source-link:hover {
+  background-color: #f8f8f8;
+  color: #4a5346;
+}
+
+.source-link:active {
+  transform: scale(0.9);
+}
+
+.source-link:visited {
   background-color: #f8f8f8;
   color: #4a5346;
 }
