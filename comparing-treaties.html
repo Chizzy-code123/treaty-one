@@ -46,9 +46,9 @@
       }
 
       #treaty-one-comparison p {
-        max-width: 600px;
+        max-width: 800px;
         font-size: 18px;
-        text-align: left;
+        text-align: center;
       }
 
       /* This makes the div a flex container with a green background */
@@ -70,10 +70,6 @@
         border: 2px solid #1b1b1b;
       }
 
-      #treaty-one-historical-terms img {
-        margin-right: 100px;
-      }
-
       #treaty-one-historical-terms p {
         /*
           This makes this one element by itself hug on
@@ -81,8 +77,12 @@
           other elements
         */
         /* align-self: flex-start; */
+        /* font-size: 16px; */
+        width: 600px;
         border: none;
         text-align: left;
+        clear: left;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -107,18 +107,20 @@
             src="images/treaty-one-symbol.webp"
             alt="Treaty 1 Symbol" />
         </h1>
-
-        <!-- Navigation -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-            <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-          </ul>
-        </nav>
-
-        <h2>Treaty One vs Other Treaties</h2>
       </header>
+
+      <!-- 
+        Moving the nav and h2 outside the header because it is going to
+        stick on top of the webpage after the user scrolls down
+        -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+        </ul>
+      </nav>
+      <h2>Treaty One vs Other Treaties</h2>
 
       <main>
         <div id="treaty-one-comparison">
@@ -151,13 +153,18 @@
         </a>
 
         <!--
-        This section contains information about the historical terms
-        of Treaty One and talks about the promises
-        that were orally made
-      -->
+          This section contains information about the historical terms
+          of Treaty One and talks about the promises
+          that were orally made
+        -->
         <section>
           <h3>Historical Terms</h3>
           <div id="treaty-one-historical-terms">
+            <img
+              width="300"
+              height="350"
+              src="images/Queen Victoria Golden Jubilee 1887.webp"
+              alt="Image of Queen Victoria facing another way in her royal attire." />
             <p>
               The terms of Treaty 1 were similar to those of other numbered
               treaties, but there were some differences. For example, Treaty 1
@@ -170,12 +177,6 @@
               peoples found as a person of respect that has their best interests
               at heart.
             </p>
-
-            <img
-              width="300"
-              height="350"
-              src="images/Queen Victoria Golden Jubilee 1887.webp"
-              alt="Image of Queen Victoria facing another way in her royal attire." />
           </div>
           <a
             class="source-link"

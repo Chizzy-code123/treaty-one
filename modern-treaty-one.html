@@ -54,8 +54,16 @@
         padding-top: 16px;
       }
 
+      #long-plain-nation-gas-station p {
+        text-align: left;
+      }
+
       #long-plain-nation-gas-station figure {
         margin-right: 16px;
+      }
+
+      #long-plain-nation-gas-station figcaption {
+        font-size: 12px;
       }
 
       #long-plain-nation-gas-station img {
@@ -64,8 +72,28 @@
           its shape if its size changes
         */
         aspect-ratio: 16/9;
-        width: 600px;
+        width: 400px;
         height: auto;
+      }
+
+      #fun-facts-container div {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: 0.2fr 0.2fr;
+        max-height: 800px;
+        justify-content: right;
+        justify-items: center;
+        align-items: flex-end;
+      }
+
+      #fun-facts-container p {
+        width: 200px;
+        height: 250px;
+        text-align: center;
+        align-self: center;
+
+        border-top: 2px solid #1b1b1b;
+        border-bottom: 2px solid #1b1b1b;
       }
     </style>
   </head>
@@ -89,17 +117,19 @@
             src="images/treaty-one-symbol.webp"
             alt="Treaty 1 Symbol" />
         </h1>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-            <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-          </ul>
-        </nav>
-
-        <h2>The Living Legacy: Treaty One Today</h2>
       </header>
+      <!-- 
+        Moving the nav and h2 outside the header because it is going to
+        stick on top of the webpage after the user scrolls down
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+        </ul>
+      </nav>
+      <h2>The Living Legacy: Treaty One Today</h2>
 
       <main>
         <section id="kapyong-barracks">
@@ -115,9 +145,12 @@
               help reshape Winnipeg's future urban growth, make a safe place to
               share culture and create economic opportunities for the indigenous
               communities.
-              <br />
+            </p>
+            <p>
               This project has been going on since 2018 and is expected to be
-              completed by 2028.
+              completed by 2028. It is guided by the Gaawijijigemangit Agreement
+              (Working Together in Partnership), signed with the City of
+              Winnipeg in 2022 to provide municipal services
             </p>
           </div>
         </section>
@@ -143,9 +176,10 @@
             </p>
             <figure>
               <img
-                width="650"
-                height="350"
-                src="images/long-plain-nation-gas-station.jpg" />
+                width="450"
+                height="150"
+                src="images/long-plain-nation-gas-station.jpg"
+                alt="Petro Canada Keesh gas station with 6 cars filling up gas." />
               <figcaption>
                 Petro-Canada Keesh gas station which is<br />
                 located at the intersection of Highway 305 and Yellowquill
@@ -159,6 +193,28 @@
             target="_blank">
             Click here to learn more about the Long Plain First Nation
           </a>
+        </section>
+
+        <section id="fun-facts-container">
+          <h3>Fun Facts</h3>
+
+          <div>
+            <p>
+              Around 5 million dollars has been funded by the government for the
+              development of Naawi-Oodena
+            </p>
+            <p>
+              The modern Treaty One flag design has 7 points which represents
+              the 7 First Nations.
+            </p>
+            <p>Treaty One was made an official government in 2018.</p>
+            <p>
+              The Treaty One Nation is committed to advancing the rights and
+              interests of its member First Nations through self-determination
+              and self-governance.
+            </p>
+            <img src="images/treaty-one-flag.jpg" alt="Treaty One Flag" />
+          </div>
         </section>
       </main>
     </div>

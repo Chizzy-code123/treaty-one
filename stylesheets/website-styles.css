@@ -41,17 +41,8 @@ body {
 }
 
 nav {
-  /* 
-    This display flex makes it so that the nav groups all 
-    the elements under it and treat it 
-    as a flex container
-
-    Now, all elements under the nav will be flex items and
-    will be arranged in a row by default
-  */
-  /* display: sticky; */
   background-color: #40503f;
-  position: fixed;
+  position: sticky;
 
   top: 0;
   left: 0;
@@ -62,10 +53,17 @@ nav {
 
 /* Style each list item in nav */
 nav ul {
-  /* This disables any default list styling */
+  /* 
+    This display flex makes it so that the ul groups all 
+    the elements under it and treat it 
+    as a flex container
+  
+    Now, all elements under the ul will be flex items and
+    will be arranged in a row by default
+  */
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: left;
   padding: 10px;
   margin: 0;
 }
@@ -252,12 +250,10 @@ main p {
   text-align: center;
   color: #1b1b1b;
   background-color: ghostwhite;
-  border: 2px solid #1b1b1b;
 }
 
-div p,
-section p {
-  border: none;
+#main-container main > p {
+  border: 2px solid #1b1b1b;
 }
 #header-container {
   /* 
