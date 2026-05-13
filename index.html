@@ -47,7 +47,7 @@
         border: none;
       }
 
-      /* Section section styling */
+      /* Second section styling */
       #treaty-one-map {
         /* 
           Flex makes the elements under it flex items
@@ -80,6 +80,10 @@
         background-size: cover;
         background-position: center;
         padding: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       #indigenous-communities-involved h3 {
@@ -93,142 +97,146 @@
       }
 
       #indigenous-communities-involved div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-color: #efffee;
+        background-color: rgba(100, 100, 100, 0.8);
+        display: inline-block;
       }
 
       #treaty-one-communities {
         display: inline-block;
         vertical-align: middle;
-        /* margin: 16px 100px; */
-        /* margin-right: auto;
-        margin-left: auto; */
         width: 70%;
+        margin-top: 16px;
+        background-color: #efffee;
       }
     </style>
   </head>
   <body>
-    <header>
-      <!-- Creating banner -->
-      <img
-        id="treaty-one-header"
-        src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
-        alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
-      <h1>
-        Treaty 1
+    <!-- 
+      This is allowed by Mr. Hardman because Chizzy is doing 
+      a fixed-width layout.
+    -->
+    <div id="main-container">
+      <header>
+        <!-- Creating banner -->
         <img
-          width="90"
-          height="80"
-          id="treaty-one-symbol"
-          src="images/treaty-one-symbol.webp"
-          alt="Treaty 1 Symbol" />
-      </h1>
-
-      <!-- Navigation -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-        </ul>
-      </nav>
-
-      <h2>Learning about Treaty 1</h2>
-    </header>
-
-    <main>
-      <!-- Introducing Treaty One -->
-      <p>
-        Treaty 1 was the first of the numbered treaties signed between the
-        Canada Crown and the Indigenous peoples in Manitoba. It was negotiated
-        in 1871 and covered a large area of land in southern Manitoba.
-      </p>
-
-      <!--
-        First section that contains images that
-        displays the Treaty 1 negotiation between the indigenous peoples
-        and the Crown's representatives.
-      -->
-      <section>
-        <h3>Treaty Negotiation Location</h3>
-
-        <div id="treaty-negotiation-container">
+          id="treaty-one-header"
+          src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
+          alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
+        <h1>
+          Treaty 1
           <img
-            src="images/Treaty One Negotiation Area.jpg"
-            width="500"
-            height="300"
-            alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
-          <p>
-            Treaty 1 was negotiated between the
-            <span style="font-weight: bold">Crown</span> and the Swampy Cree<br />
-            peoples at Lower Fort Gary (<span style="font-style: italic"
-              >known as Stone Fort</span
-            >) ,<br />
-            Manitoba on August 3, 1871.
-          </p>
-        </div>
-        <a class="source-link" href="https://treaty1.ca/" target="_blank">
-          Click here to visit the official Treaty One Site to learn more!</a
-        >
-      </section>
+            width="90"
+            height="80"
+            id="treaty-one-symbol"
+            src="images/treaty-one-symbol.webp"
+            alt="Treaty 1 Symbol" />
+        </h1>
 
-      <!-- Shows where Treaty 1 covers on the Manitoba map and Canada map. -->
-      <section>
-        <h3>Treaty 1 On the Map</h3>
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+            <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+          </ul>
+        </nav>
 
-        <div id="treaty-one-map">
-          <img
-            src="images/treaty-one-manitoba.webp"
-            width="350"
-            height="300"
-            alt="Map showing the area covered by Treaty 1 on the Manitoba province." />
-          <img
-            src="images/treaty-one-canada.png"
-            width="450"
-            height="300"
-            alt="Map showing the area covered by Treaty 1 in Canada." />
-          <p>
-            Treaty 1 covers the area of land in Manitoba that includes Winnipeg
-            and extends north to the area around Lake Winnipeg. It also includes
-            the area around the Red River and the Assiniboine River.
-          </p>
-        </div>
-      </section>
+        <h2>Learning about Treaty 1</h2>
+      </header>
 
-      <!-- Lists the indigenous communities that were involved in the creation of Treaty 1. -->
-      <section id="indigenous-communities-involved">
-        <h3>Indigenous Communities Involved in Treaty 1</h3>
+      <main>
+        <!-- Introducing Treaty One -->
         <p>
-          The Indigenous main communities involved in Treaty 1 include the
-          Brokenhead Ojibway Nation, the Long Plain First Nation, the Peguis
-          First Nation, the Roseau River Anishinabe First Nation, and the Sandy
-          Bay Ojibway First Nation. These nation were mostly part of the
-          Anisinabe Nation, but also included some Swampy Cree peoples.
+          Treaty 1 was the first of the numbered treaties signed between the
+          Canada Crown and the Indigenous peoples in Manitoba. It was negotiated
+          in 1871 and covered a large area of land in southern Manitoba.
         </p>
-        <br />
-        <div>
+
+        <!--
+          First section that contains images that
+          displays the Treaty 1 negotiation between the indigenous peoples
+          and the Crown's representatives.
+        -->
+        <section>
+          <h3>Treaty Negotiation Location</h3>
+
+          <div id="treaty-negotiation-container">
+            <img
+              src="images/Treaty One Negotiation Area.jpg"
+              width="500"
+              height="300"
+              alt="Area where Treaty 1 was negotiated. A group of Indigenous peoples surrounding the Canada Crown representatives." />
+            <p>
+              Treaty 1 was negotiated between the
+              <span style="font-weight: bold">Crown</span> and the Swampy
+              Cree<br />
+              peoples at Lower Fort Gary (<span style="font-style: italic"
+                >known as Stone Fort</span
+              >) ,<br />
+              Manitoba on August 3, 1871.
+            </p>
+          </div>
+          <a class="source-link" href="https://treaty1.ca/" target="_blank">
+            Click here to visit the official Treaty One Site to learn more!</a
+          >
+        </section>
+
+        <!-- Shows where Treaty 1 covers on the Manitoba map and Canada map. -->
+        <section>
+          <h3>Treaty 1 On the Map</h3>
+
+          <div id="treaty-one-map">
+            <img
+              src="images/treaty-one-manitoba.webp"
+              width="350"
+              height="300"
+              alt="Map showing the area covered by Treaty 1 on the Manitoba province." />
+            <img
+              src="images/treaty-one-canada.png"
+              width="450"
+              height="300"
+              alt="Map showing the area covered by Treaty 1 in Canada." />
+            <p>
+              Treaty 1 covers the area of land in Manitoba that includes
+              Winnipeg and extends north to the area around Lake Winnipeg. It
+              also includes the area around the Red River and the Assiniboine
+              River.
+            </p>
+          </div>
+        </section>
+
+        <!-- Lists the indigenous communities that were involved in the creation of Treaty 1. -->
+        <section id="indigenous-communities-involved">
+          <div>
+            <h3>Indigenous Communities Involved in Treaty 1</h3>
+            <p>
+              The Indigenous main communities involved in Treaty 1 include the
+              Brokenhead Ojibway Nation, the Long Plain First Nation, the Peguis
+              First Nation, the Roseau River Anishinabe First Nation, and the
+              Sandy Bay Ojibway First Nation. These nation were mostly part of
+              the Anisinabe Nation, but also included some Swampy Cree peoples.
+            </p>
+            <br />
+          </div>
           <img
             id="treaty-one-communities"
-            width="1000px"
+            width="90%"
             height="auto"
             src="images/TREATY-1-COMMUNITIES-2020-2048x244.png"
             alt="Indigenous communities involved in Treaty 1" />
-        </div>
-        <a
-          class="source-link"
-          href="https://scoinc.mb.ca/treaties/"
-          target="_blank"
-          >Southern Chiefs' Organization Inc. Treaties</a
-        >
-      </section>
-    </main>
+          <a
+            class="source-link"
+            href="https://scoinc.mb.ca/treaties/"
+            target="_blank"
+            >Southern Chiefs' Organization Inc. Treaties</a
+          >
+        </section>
+      </main>
 
-    <!-- Copyright information -->
-    <footer>
-      <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
-    </footer>
+      <!-- Copyright information -->
+      <footer>
+        <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
+      </footer>
+    </div>
   </body>
 </html>
