@@ -67,70 +67,162 @@
       }
 
       #long-plain-nation-gas-station img {
-        /* 
-          Aspect ratio makes the image maintain
-          its shape if its size changes
-        */
+        /*
+            Aspect ratio makes the image maintain
+            its shape if its size changes
+          */
         aspect-ratio: 16/9;
         width: 400px;
         height: auto;
       }
 
-      #fun-facts-container div {
-        display: grid;
-        grid-gap: 12px;
-        grid-template-columns: 0.2fr 0.2fr;
-        max-height: 800px;
-        justify-content: right;
-        justify-items: center;
-        align-items: flex-end;
+      #fun-facts-container {
+        background-color: #40503f83;
+        padding: 16px;
       }
 
-      #fun-facts-container p {
-        width: 200px;
-        height: 250px;
-        text-align: center;
-        align-self: center;
+      #fact-numbers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
 
-        border-top: 2px solid #1b1b1b;
-        border-bottom: 2px solid #1b1b1b;
+      #fact-numbers p {
+        font-size: 32px;
+        font-weight: bold;
+        background-color: transparent;
+        color: ghostwhite;
+        padding-bottom: 0px;
+        background-color: #2d352a74;
+        padding-top: 0px;
+      }
+
+      #fun-facts-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 16px;
+      }
+
+      #fun-facts-content p {
+        width: 300px;
+        height: 300px;
+        margin: 16px;
+        margin-top: -5px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #1b1b1b;
+      }
+
+      #treaty-one-images-display {
+        background-color: #40503f83;
+        display: grid;
+        align-content: center;
+        /* 
+          grid-template-columns defines the number of
+          collums the grid will have and the width.
+
+          The repeat makes sure that it continues over and over
+
+          fr means fraction of the available space.
+            Since I'm using 1fr that means 
+            that each collum will take up an equal amount of space.
+        */
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 16px;
+        padding: 32px;
+        gap: 20px;
+        background-color: #48534693;
+      }
+
+      #treaty-one-images-display img {
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: 0 8px 2px 2px rgba(20, 20, 20, 0.6);
+        animation:
+          pulse 5s infinite,
+          scaleUp 5s ease-in-out infinite;
+      }
+
+      /* This makes the shadow around the images pulse */
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 8px 6px 2px rgba(154, 154, 154, 0.6);
+          scale: 1;
+        }
+        50% {
+          box-shadow: 0 8px 6px 2px rgb(69, 69, 69);
+          scale: 1.01;
+        }
+        100% {
+          box-shadow: 0 8px 6px 2px rgba(154, 154, 154, 0.6);
+          scale: 1;
+        }
+      }
+
+      /* This makes the images bigger smoothly */
+      @keyframes scaleUp {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.01);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      #treaty-one-images-display figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #treaty-one-images-display figcaption {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 16px;
+        width: 100%;
       }
     </style>
   </head>
   <body>
+    <header>
+      <img
+        id="treaty-one-header"
+        src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
+        alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
+      <h1>
+        Modern Treaty One
+        <img
+          width="90"
+          height="80"
+          id="treaty-one-symbol"
+          src="images/treaty-one-symbol.webp"
+          alt="Treaty 1 Symbol" />
+      </h1>
+    </header>
+    <!-- 
+      Moving the nav and h2 outside the header because it is going to
+      stick on top of the webpage after the user scrolls down
+    -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+        <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+      </ul>
+    </nav>
+    <h2>The Living Legacy: Treaty One Today</h2>
+
     <!-- 
       This is allowed by Mr. Hardman because Chizzy is doing 
       a fixed-width layout.
     -->
     <div id="main-container">
-      <header>
-        <img
-          id="treaty-one-header"
-          src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
-          alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
-        <h1>
-          Modern Treaty One
-          <img
-            width="90"
-            height="80"
-            id="treaty-one-symbol"
-            src="images/treaty-one-symbol.webp"
-            alt="Treaty 1 Symbol" />
-        </h1>
-      </header>
-      <!-- 
-        Moving the nav and h2 outside the header because it is going to
-        stick on top of the webpage after the user scrolls down
-      -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-        </ul>
-      </nav>
-      <h2>The Living Legacy: Treaty One Today</h2>
-
       <main>
         <section id="kapyong-barracks">
           <div>
@@ -161,6 +253,10 @@
           Click here to learn more about the Naawi-Oodena Urban Reserve Project
         </a>
 
+        <!-- 
+          This section talks about the pretty new Long Plain Gas Station
+          that is used to support the conmmunity.
+        -->
         <section>
           <h3>Long Plain First Nations Gas Station</h3>
           <div id="long-plain-nation-gas-station">
@@ -195,28 +291,95 @@
           </a>
         </section>
 
-        <section id="fun-facts-container">
+        <!-- 
+          This section has some fun facts about
+          the modern day Treaty One.          
+        -->
+        <section>
           <h3>Fun Facts</h3>
+          <div id="fun-facts-container">
+            <div id="fact-numbers">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+            </div>
+            <div id="fun-facts-content">
+              <p>
+                Around 5 million dollars has been funded by the government for
+                the development of Naawi-Oodena
+              </p>
+              <p>
+                The modern Treaty One flag design has 7 points which represents
+                the 7 First Nations.
+              </p>
+              <p>Treaty One was made an official government in 2018.</p>
+              <p>
+                The Treaty One Nation is committed to advancing the rights and
+                interests of its member First Nations through self-determination
+                and self-governance.
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <div>
-            <p>
-              Around 5 million dollars has been funded by the government for the
-              development of Naawi-Oodena
-            </p>
-            <p>
-              The modern Treaty One flag design has 7 points which represents
-              the 7 First Nations.
-            </p>
-            <p>Treaty One was made an official government in 2018.</p>
-            <p>
-              The Treaty One Nation is committed to advancing the rights and
-              interests of its member First Nations through self-determination
-              and self-governance.
-            </p>
-            <img src="images/treaty-one-flag.jpg" alt="Treaty One Flag" />
+        <!-- 
+          This section contains images
+          that are related to Treaty One.
+          Each are wrapped in a figure element with a caption that describes it.
+        -->
+        <section>
+          <h3>Images of Treaty One Today</h3>
+          <div id="treaty-one-images-display">
+            <figure>
+              <img
+                width="450"
+                height="300"
+                src="images/treaty-one-flag.jpg"
+                alt="Treaty One Flag" />
+              <figcaption>Modern Treaty One Flag</figcaption>
+            </figure>
+            <figure>
+              <img
+                width="400"
+                height="300"
+                src="images/self-governance-signing.avif"
+                alt="Middle aged men from the Canadian Crown signing self-governing treaty. Joyful Indigenous children behind the men facing away from camera smiling." />
+              <figcaption>
+                The Whitecap Dakota First Nation in Saskatchewan signing its
+                self-governing treaty with the Crown in 2023.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                width="450"
+                height="300"
+                src="images/waa-treaty-one.webp"
+                alt="Several people standing together after unveiling the Treaty One land acknowledgement banner in the James Richardson International Airport. One man is wearing a headress." />
+              <figcaption>
+                Officials with Treaty One Nations and the Winnipeg Airports
+                Authority unveil a land acknowledgement banner in the airport’s
+                arrivals hall, Tuesday, April 14, 2026.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                width="400"
+                height="450"
+                src="images/KAPYONG-NAAWI-OODENA-development-map.jpg"
+                alt="Map of the soon to be developed Naawi-Oodena area." />
+              <figcaption>
+                Naawi-Oodena Development Overview. The map shows the different
+                areas of the new and improved place.
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>
     </div>
+    <!-- Copyright information -->
+    <footer>
+      <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
+    </footer>
   </body>
 </html>

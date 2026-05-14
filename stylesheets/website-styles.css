@@ -152,11 +152,21 @@ nav a:hover::after {
   border-radius: 5px;
   border: 3px solid #1c1c1c;
 
+  /* This smoothly changes the background and text color */
   transition:
     color 0.3s ease-out,
     background-color 0.3s ease-out;
 }
 
+/* 
+  Changing the button's apperance when it gets
+  hovered on or focused
+
+  focus is used to style the element when it
+  is focused on with an accessibility feature
+  like pressing tab
+
+*/
 .source-link:focus,
 .source-link:hover {
   background-color: #f8f8f8;
@@ -218,6 +228,7 @@ h2 {
   padding: 16px;
   width: auto;
   margin-bottom: 32px;
+  margin-top: -1px;
 }
 
 h3 {
