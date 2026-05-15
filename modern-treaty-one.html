@@ -14,6 +14,10 @@
     <title>Modern Treaty One</title>
 
     <style>
+      /* 
+        This styles the first section that talks about the
+        Kapyong Barracks and it has a hero banner
+      */
       #kapyong-barracks {
         background-image:
           linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -44,100 +48,124 @@
         color: ghostwhite;
       }
 
+      /* 
+        This styles the section that talks about the
+        Long Plain Nation Gas Station.
+      */
       #long-plain-nation-gas-station {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        justify-content: flex-end;
         background-color: ghostwhite;
         border: 2px solid #1b1b1b;
         padding: 16px;
-        padding-top: 16px;
+        padding-top: 32px;
+        margin-top: 16px;
+        /*
+          This makes the container bigger if the
+          content overflows 
+        */
+        overflow: auto;
       }
 
       #long-plain-nation-gas-station p {
         text-align: left;
+        padding: 0px;
+        margin-left: 16px;
       }
 
       #long-plain-nation-gas-station figure {
+        float: right;
         margin-right: 16px;
+        margin-left: 16px;
       }
 
       #long-plain-nation-gas-station figcaption {
+        /* 
+          Making the caption smaller because there 
+          is more text
+        */
         font-size: 12px;
       }
 
       #long-plain-nation-gas-station img {
-        /*
-            Aspect ratio makes the image maintain
-            its shape if its size changes
-          */
-        aspect-ratio: 16/9;
-        width: 400px;
+        width: 500px;
         height: auto;
       }
 
+      /* 
+        Styling the container that holds the
+        4 fun facts.
+      */
       #fun-facts-container {
         background-color: #40503f83;
         padding: 16px;
+        border: 2px solid #1b1b1b;
       }
 
+      /* 
+        This styles the numbers at the top of
+        the fun facts blurbs.
+      */
       #fact-numbers {
         display: flex;
         flex-direction: row;
         align-items: center;
+        /* 
+          This centers the numbers horizontally within
+          the container.
+        */
         justify-content: center;
       }
 
       #fact-numbers p {
         font-size: 32px;
         font-weight: bold;
-        background-color: transparent;
         color: ghostwhite;
         padding-bottom: 0px;
-        background-color: #2d352a74;
+        background-color: #474f45;
         padding-top: 0px;
       }
 
+      /* 
+        This styles the 4 fun facts blurbs
+      */
       #fun-facts-content {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: flex-start;
         margin-top: 16px;
       }
 
       #fun-facts-content p {
         width: 300px;
-        height: 300px;
+        min-height: 200px;
         margin: 16px;
         margin-top: -5px;
-        display: flex;
-        align-items: center;
-        border: 2px solid #1b1b1b;
+        text-align: center;
+        border-bottom: 4px solid #1b1b1b;
       }
 
       #treaty-one-images-display {
         background-color: #40503f83;
         display: grid;
         align-content: center;
-        /* 
+        border: 2px solid #1b1b1b;
+        /*
           grid-template-columns defines the number of
           columns the grid will have and the width.
 
           The repeat makes sure that it continues over and over
 
           fr means fraction of the available space.
-            Since I'm using 1fr that means 
-            that each column will take up an equal amount of space.
+          Since I'm using 1fr that means
+          that each column will take up an equal amount of space.
         */
         grid-template-columns: repeat(2, 1fr);
         margin-top: 16px;
         padding: 32px;
         gap: 20px;
-        background-color: #48534693;
       }
 
       #treaty-one-images-display img {
-        border-radius: 20px;
         width: 100%;
         box-shadow: 0 8px 2px 2px rgba(20, 20, 20, 0.6);
         animation:
@@ -145,7 +173,7 @@
           scaleUp 5s ease-in-out infinite;
       }
 
-      /* This makes the shadow around the images pulse */
+      /* This makes the shadow around the images grow larger */
       @keyframes pulse {
         0% {
           box-shadow: 0 8px 6px 2px rgba(154, 154, 154, 0.6);
@@ -187,39 +215,39 @@
     </style>
   </head>
   <body>
-    <header>
-      <img
-        id="treaty-one-header"
-        src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
-        alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
-      <h1>
-        Modern Treaty One
-        <img
-          width="90"
-          height="80"
-          id="treaty-one-symbol"
-          src="images/treaty-one-symbol.webp"
-          alt="Treaty 1 Symbol" />
-      </h1>
-    </header>
-    <!-- 
-      Moving the nav and h2 outside the header because it is going to
-      stick on top of the webpage after the user scrolls down
-    -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
-        <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
-      </ul>
-    </nav>
-    <h2>The Living Legacy: Treaty One Today</h2>
-
     <!-- 
       This is allowed by Mr. Hardman because Chizzy is doing 
       a fixed-width layout.
     -->
     <div id="main-container">
+      <header>
+        <img
+          id="treaty-one-header"
+          src="images/Manito-Ahbee-Festival-2019-44_Credit-Travel-Manitoba_5a02da0fbc799ade054813c4a8915839.webp"
+          alt="2019 Manito Ahbee Festival. Middle aged man with indigenous attire dancing." />
+        <h1>
+          Modern Treaty One
+          <img
+            width="90"
+            height="80"
+            id="treaty-one-symbol"
+            src="images/treaty-one-symbol.webp"
+            alt="Treaty 1 Symbol" />
+        </h1>
+      </header>
+      <!-- 
+        Moving the nav and h2 outside the header because it is going to
+        stick on top of the webpage after the user scrolls down
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparing-treaties.html">Comparing Treaty One</a></li>
+          <li><a href="modern-treaty-one.html">Modern Treaty One</a></li>
+        </ul>
+      </nav>
+      <h2>The Living Legacy: Treaty One Today</h2>
+
       <main>
         <section id="kapyong-barracks">
           <div>
@@ -257,16 +285,6 @@
         <section>
           <h3>Long Plain First Nations Gas Station</h3>
           <div id="long-plain-nation-gas-station">
-            <p>
-              The Long Plain First Nations Gas Station
-              <i>Petro-Canada Keesh (formerly Arrowhead Gas Bar)</i> is a modern
-              example of Indigenous economic development. Located on the Long
-              Plain First Nation reserve, this gas station provides essential
-              services to the community and generates revenue that supports
-              local initiatives. The project reflects the ongoing efforts of
-              Indigenous peoples to reclaim their economic sovereignty and
-              create sustainable opportunities for their communities.
-            </p>
             <figure>
               <img
                 width="450"
@@ -279,6 +297,16 @@
                 Trail.
               </figcaption>
             </figure>
+            <p>
+              The Long Plain First Nations Gas Station
+              <i>Petro-Canada Keesh (formerly Arrowhead Gas Bar)</i> is a modern
+              example of Indigenous economic development. Located on the Long
+              Plain First Nation reserve, this gas station provides essential
+              services to the community and generates revenue that supports
+              local initiatives. The project reflects the ongoing efforts of
+              Indigenous peoples to reclaim their economic sovereignty and
+              create sustainable opportunities for their communities.
+            </p>
           </div>
           <a
             class="source-link"
@@ -303,18 +331,18 @@
             </div>
             <div id="fun-facts-content">
               <p>
-                Around 5 million dollars has been funded by the government for
-                the development of Naawi-Oodena
+                Around <b>$5 million dollars</b> has been funded by the
+                government for the development of Naawi-Oodena
               </p>
               <p>
                 The modern Treaty One flag design has 7 points which represents
-                the 7 First Nations.
+                the <b>7 First Nations.</b>
               </p>
-              <p>Treaty One was made an official government in 2018.</p>
+              <p>Treaty One was made an official government in <b>2018</b>.</p>
               <p>
                 The Treaty One Nation is committed to advancing the rights and
-                interests of its member First Nations through self-determination
-                and self-governance.
+                interests of the First Nations through
+                <b>self-determination</b> and <b>self-governance</b>.
               </p>
             </div>
           </div>
