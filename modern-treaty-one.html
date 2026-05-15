@@ -2,7 +2,7 @@
   Name: Chizzy Nwankwo
   Course: Web Development II
   Teacher: Mr. Hardman
-  School: Pembina Trails Colligiate
+  School: Pembina Trails Collegiate
   Date Last Modified: May 12, 2026
 -->
 <!doctype html>
@@ -14,6 +14,10 @@
     <title>Modern Treaty One</title>
 
     <style>
+      /* 
+        This styles the first section that talks about the
+        Kapyong Barracks and it has a hero banner
+      */
       #kapyong-barracks {
         background-image:
           linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -44,56 +48,169 @@
         color: ghostwhite;
       }
 
+      /* 
+        This styles the section that talks about the
+        Long Plain Nation Gas Station.
+      */
       #long-plain-nation-gas-station {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        justify-content: flex-end;
         background-color: ghostwhite;
         border: 2px solid #1b1b1b;
         padding: 16px;
-        padding-top: 16px;
+        padding-top: 32px;
+        margin-top: 16px;
+        /*
+          This makes the container bigger if the
+          content overflows 
+        */
+        overflow: auto;
       }
 
       #long-plain-nation-gas-station p {
         text-align: left;
+        padding: 0px;
+        margin-left: 16px;
       }
 
       #long-plain-nation-gas-station figure {
+        float: right;
         margin-right: 16px;
+        margin-left: 16px;
       }
 
       #long-plain-nation-gas-station figcaption {
+        /* 
+          Making the caption smaller because there 
+          is more text
+        */
         font-size: 12px;
       }
 
       #long-plain-nation-gas-station img {
-        /* 
-          Aspect ratio makes the image maintain
-          its shape if its size changes
-        */
-        aspect-ratio: 16/9;
-        width: 400px;
+        width: 500px;
         height: auto;
       }
 
-      #fun-facts-container div {
-        display: grid;
-        grid-gap: 12px;
-        grid-template-columns: 0.2fr 0.2fr;
-        max-height: 800px;
-        justify-content: right;
-        justify-items: center;
-        align-items: flex-end;
+      /* 
+        Styling the container that holds the
+        4 fun facts.
+      */
+      #fun-facts-container {
+        background-color: #40503f83;
+        padding: 16px;
+        border: 2px solid #1b1b1b;
       }
 
-      #fun-facts-container p {
-        width: 200px;
-        height: 250px;
-        text-align: center;
-        align-self: center;
+      /* 
+        This styles the numbers at the top of
+        the fun facts blurbs.
+      */
+      #fact-numbers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* 
+          This centers the numbers horizontally within
+          the container.
+        */
+        justify-content: center;
+      }
 
-        border-top: 2px solid #1b1b1b;
-        border-bottom: 2px solid #1b1b1b;
+      #fact-numbers p {
+        font-size: 32px;
+        font-weight: bold;
+        color: ghostwhite;
+        padding-bottom: 0px;
+        background-color: #474f45;
+        padding-top: 0px;
+      }
+
+      /* 
+        This styles the 4 fun facts blurbs
+      */
+      #fun-facts-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 16px;
+      }
+
+      #fun-facts-content p {
+        width: 300px;
+        min-height: 200px;
+        margin: 16px;
+        margin-top: -5px;
+        text-align: center;
+        border-bottom: 4px solid #1b1b1b;
+      }
+
+      #treaty-one-images-display {
+        background-color: #40503f83;
+        display: grid;
+        align-content: center;
+        border: 2px solid #1b1b1b;
+        /*
+          grid-template-columns defines the number of
+          columns the grid will have and the width.
+
+          The repeat makes sure that it continues over and over
+
+          fr means fraction of the available space.
+          Since I'm using 1fr that means
+          that each column will take up an equal amount of space.
+        */
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 16px;
+        padding: 32px;
+        gap: 20px;
+      }
+
+      #treaty-one-images-display img {
+        width: 100%;
+        box-shadow: 0 8px 2px 2px rgba(20, 20, 20, 0.6);
+        animation:
+          pulse 5s infinite,
+          scaleUp 5s ease-in-out infinite;
+      }
+
+      /* This makes the shadow around the images grow larger */
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 8px 6px 2px rgba(154, 154, 154, 0.6);
+        }
+        50% {
+          box-shadow: 0 8px 6px 2px rgb(69, 69, 69);
+        }
+        100% {
+          box-shadow: 0 8px 6px 2px rgba(154, 154, 154, 0.6);
+        }
+      }
+
+      /* This makes the images bigger smoothly */
+      @keyframes scaleUp {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.01);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      #treaty-one-images-display figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #treaty-one-images-display figcaption {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 16px;
+        width: 100%;
       }
     </style>
   </head>
@@ -161,19 +278,13 @@
           Click here to learn more about the Naawi-Oodena Urban Reserve Project
         </a>
 
+        <!-- 
+          This section talks about the pretty new Long Plain Gas Station
+          that is used to support the community.
+        -->
         <section>
           <h3>Long Plain First Nations Gas Station</h3>
           <div id="long-plain-nation-gas-station">
-            <p>
-              The Long Plain First Nations Gas Station
-              <i>Petro-Canada Keesh (formerly Arrowhead Gas Bar)</i> is a modern
-              example of Indigenous economic development. Located on the Long
-              Plain First Nation reserve, this gas station provides essential
-              services to the community and generates revenue that supports
-              local initiatives. The project reflects the ongoing efforts of
-              Indigenous peoples to reclaim their economic sovereignty and
-              create sustainable opportunities for their communities.
-            </p>
             <figure>
               <img
                 width="450"
@@ -186,6 +297,16 @@
                 Trail.
               </figcaption>
             </figure>
+            <p>
+              The Long Plain First Nations Gas Station
+              <i>Petro-Canada Keesh (formerly Arrowhead Gas Bar)</i> is a modern
+              example of Indigenous economic development. Located on the Long
+              Plain First Nation reserve, this gas station provides essential
+              services to the community and generates revenue that supports
+              local initiatives. The project reflects the ongoing efforts of
+              Indigenous peoples to reclaim their economic sovereignty and
+              create sustainable opportunities for their communities.
+            </p>
           </div>
           <a
             class="source-link"
@@ -195,28 +316,95 @@
           </a>
         </section>
 
-        <section id="fun-facts-container">
+        <!-- 
+          This section has some fun facts about
+          the modern day Treaty One.          
+        -->
+        <section>
           <h3>Fun Facts</h3>
+          <div id="fun-facts-container">
+            <div id="fact-numbers">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+            </div>
+            <div id="fun-facts-content">
+              <p>
+                Around <b>$5 million dollars</b> has been funded by the
+                government for the development of Naawi-Oodena
+              </p>
+              <p>
+                The modern Treaty One flag design has 7 points which represents
+                the <b>7 First Nations.</b>
+              </p>
+              <p>Treaty One was made an official government in <b>2018</b>.</p>
+              <p>
+                The Treaty One Nation is committed to advancing the rights and
+                interests of the First Nations through
+                <b>self-determination</b> and <b>self-governance</b>.
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <div>
-            <p>
-              Around 5 million dollars has been funded by the government for the
-              development of Naawi-Oodena
-            </p>
-            <p>
-              The modern Treaty One flag design has 7 points which represents
-              the 7 First Nations.
-            </p>
-            <p>Treaty One was made an official government in 2018.</p>
-            <p>
-              The Treaty One Nation is committed to advancing the rights and
-              interests of its member First Nations through self-determination
-              and self-governance.
-            </p>
-            <img src="images/treaty-one-flag.jpg" alt="Treaty One Flag" />
+        <!-- 
+          This section contains images
+          that are related to Treaty One.
+          Each are wrapped in a figure element with a caption that describes it.
+        -->
+        <section>
+          <h3>Images of Treaty One Today</h3>
+          <div id="treaty-one-images-display">
+            <figure>
+              <img
+                width="450"
+                height="300"
+                src="images/treaty-one-flag.jpg"
+                alt="Treaty One Flag" />
+              <figcaption>Modern Treaty One Flag</figcaption>
+            </figure>
+            <figure>
+              <img
+                width="400"
+                height="300"
+                src="images/self-governance-signing.avif"
+                alt="Middle aged men from the Canadian Crown signing self-governing treaty. Joyful Indigenous children behind the men facing away from camera smiling." />
+              <figcaption>
+                The Whitecap Dakota First Nation in Saskatchewan signing its
+                self-governing treaty with the Crown in 2023.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                width="450"
+                height="300"
+                src="images/waa-treaty-one.webp"
+                alt="Several people standing together after unveiling the Treaty One land acknowledgement banner in the James Richardson International Airport. One man is wearing a headress." />
+              <figcaption>
+                Officials with Treaty One Nations and the Winnipeg Airports
+                Authority unveil a land acknowledgement banner in the airport’s
+                arrivals hall, Tuesday, April 14, 2026.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                width="400"
+                height="450"
+                src="images/KAPYONG-NAAWI-OODENA-development-map.jpg"
+                alt="Map of the soon to be developed Naawi-Oodena area." />
+              <figcaption>
+                Naawi-Oodena Development Overview. The map shows the different
+                areas of the new and improved place.
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>
     </div>
+    <!-- Copyright information -->
+    <footer>
+      <p>&copy; Copyright 2026 Chizzy Nwankwo</p>
+    </footer>
   </body>
 </html>
