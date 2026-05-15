@@ -201,6 +201,7 @@ h1 {
   margin: 20px 0px 0px;
   /* Using the traditional scale to size my headings */
   font-size: 48px;
+  font-size: 3.2rem;
 }
 
 h2 {
